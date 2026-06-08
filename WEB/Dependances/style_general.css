@@ -1,0 +1,196 @@
+/* Variables et fonts */
+
+:root {
+    --papier: rgb(253, 228, 193);
+    --papier_transparent: rgba(253, 228, 13, 0.5);
+    --couverture: #3a506b;
+    --couverture_transparent: rgba(58, 80, 107, 0.5);
+    --titre: #c8860a;
+    --titre_transparent: rgba(200, 134, 10, 0.5);
+    --neutre: #d6cfc6;
+    --neutre_transparent: rgba(214, 207, 198, 0.4);
+	--ardoise: #8a9aaa;
+	--ardoise_transparent: rgba(138, 154, 170, 0.25);
+}
+
+@font-face {
+	font-family: 'EBGaramond';
+	font-weight: normal;
+	font-style: normal;
+	src: url(Fonts/EBGaramond.otf);
+}
+
+@font-face {
+	font-family: 'EBGaramondSC';
+	src: url(Fonts/EBGaramondSC.otf);
+}
+
+@font-face {
+	font-family: 'EBGaramond';
+	font-weight: bold;
+	font-style: normal;
+	src: url(Fonts/EBGaramond-Bold.ttf);
+}
+
+@font-face {
+	font-family: 'EBGaramond';
+	font-style: italic;
+	src: url(Fonts/EBGaramond-Italic.ttf);
+}
+
+@font-face {
+	font-family: 'EBGaramondSC';
+	font-weight:bold;
+	src: url(Fonts/AGaramond-SemiboldSC.otf);
+}
+
+/* Mise en page */
+
+/* Structure de la page */
+
+main {
+	border: 2px solid var(--titre);
+	padding: 1em;
+	border-radius: 20px;
+	background-color: var(--ardoise_transparent);
+	grid-area: main;
+	overflow-y: auto;
+	align-self: stretch;
+	margin: 0 2em ;
+	min-height: 0;
+	max-height: 90%;
+}
+
+body {
+	overflow: hidden;
+	height: 100vh;
+	display: grid;
+	grid-template-columns: 2fr 7fr 2fr;
+	grid-template-rows: auto 1fr;
+	grid-template-areas: "nav header controls" "nav main controls";
+	background-color: var(--papier);
+	font-family: 'EBGaramond';
+}
+
+header {
+	grid-area: header;
+}
+
+aside {
+	overflow-y: auto;
+	min-height: 0;
+	max-height: 80%;
+	position: static;
+}
+
+aside.nav {
+	grid-area: nav;
+}
+
+aside.controls {
+	grid-area: controls;
+}
+
+p {
+	text-indent: 12pt;
+}
+
+h1 {
+	font-family: 'EBGaramondSC';
+	text-align: center;
+	text-transform: capitalize;
+	font-size: 25pt;
+	margin-bottom: 0;
+	padding:0;
+}
+
+h2.subtitle {
+	margin-top: 0.2em;
+	font-family: 'EBGaramondSC';
+	text-align: center;
+	text-transform: capitalize;
+	font-size: 20pt;
+}
+
+h2.intertitre {
+	font-family: 'EBGaramondSC';
+	text-align: left;
+	text-transform: capitalize;
+	font-size: 20pt;
+	text-indent: 24pt;
+}
+
+/* ASIDE */
+
+aside {
+	background: var(--couverture_transparent);
+    border: 1px solid var(--couverture);
+	border-radius: 20px;
+	padding: 12pt;
+}
+
+aside ul {
+	list-style-type: none;
+	padding-left: 0;
+    margin-left: 0;
+	list-style-position: inside;
+}
+
+aside ul li button, select {
+	background-color:var(--couverture);
+	border-color:var(--titre) ;
+	font-family: "EBGaramond";
+	padding:12pt;
+	border-radius:10px;
+	width: 100%
+}
+
+aside ul li button:hover {
+	background-color:var(--titre);
+	border-color: var(--couverture);
+}
+
+a {
+	background-color:var(--couverture);
+	border-color:var(--titre) ;
+	font-family: "EBGaramond";
+	border-radius:10px;
+}
+
+span.titre {
+	font-style: italic;
+}
+
+select {
+	background-color:var(--couverture);
+	border-color:var(--titre) ;
+	font-family: "EBGaramond";
+	padding:12pt;
+	border-radius:10px;
+	text-align: center;
+}
+
+select:hover {
+	background-color:var(--titre);
+	border-color:var(--couverture) ;
+	color: var(--papier);
+}
+
+.emphase {
+	font-weight:bold;
+}
+
+img.cover {
+	max-width: 70%;
+}
+
+a.covers {
+	background: none;
+	border: none;
+}
+
+.covers {
+	display: flex;
+	justify-content: center;
+	align-content: center;
+}

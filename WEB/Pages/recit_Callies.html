@@ -1,0 +1,846 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html>
+<html lang="fr-FR">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></meta>
+      <title>Planche Callies</title>
+      <link rel="stylesheet" href="../Dependances/style_general.css" type="text/css"></link>
+      <link rel="stylesheet" href="../Dependances/style_recits.css" type="text/css"></link><script src="../Dependances/Scripts_planches.js" charset="UTF-8"></script></head>
+   <body>
+      <header>
+         <h1>Récit ethnographique</h1>
+         <h2 class="subtitle">Couple Callies</h2>
+      </header>
+      <aside class="nav">
+         <h3>Navigation</h3>
+         <ul>
+            <li><button onclick="window.location='../accueil.html'">Accueil</button></li>
+            <li><select class="select_recit" onchange="window.location=this.value">
+                  <option value="recits_ethno">Récits ethnographiques</option>
+                  <option value="recit_Pilon.html">Famille Pilon</option>
+                  <option value="recit_Renoir.html">Famille Renoir</option>
+                  <option value="recit_Ginette.html">Ginette Durand</option>
+                  <option value="recit_Mougins.html">Nathalie Mougins</option>
+                  <option value="recit_PierreD.html">Pierre Delmas</option>
+                  <option value="recit_Dufournel.html">Famille Dufournel</option>
+                  <option value="recit_Brahimi.html">Couple Brahimi</option>
+                  <option value="recit_Callies.html">Couple Callies</option>
+                  <option value="recit_Landreau.html">Couple Landreau</option>
+                  <option value="recit_Dembele-Diakite.html">Couple Dembélé-Diakité</option>
+                  <option value="recit_Boulin-Martinez.html">Couple Boulin-Martinez</option>
+                  <option value="recit_Bensaid-Hattoub.html">Couple Bensaïd-Hattoub</option></select></li>
+            <li><button onclick="window.location='banque_images.html'">Galerie d'images</button></li>
+            <li><select class="select_index" onchange="window.location=this.value">
+                  <option value="index">Index</option>
+                  <option value="index_casting.html">Personnages</option>
+                  <option value="index_recits.html">Les types de récits</option>
+                  <option value="index_groupes.html">Les types de personnages</option></select></li>
+         </ul>
+      </aside>
+      <aside class="controls">
+         <h3>Éléments textuels</h3>
+         <ul>
+            <li><button id="EmphaseAdaptation" onclick="EmphaseAdaptation()">
+                  									Adaptations</button></li>
+            <li style="background-color: #CAE0DF;">Textes</li>
+            <li style="background-color: #F2D0BE;">Images</li>
+            <li style="background-color: #DCBC9B;">Texto-images</li>
+         </ul>
+      </aside>
+      <main>
+         <section class="section_planches">
+            <div class="planche"><img src="../Images/084.jpg" class="planche" id="Callies-1" usemap="#map_Callies-1"></img><map id="map_Callies-1"><area alt="Callies-1-1-1" class="vignette ethno-narr" shape="rect" href="#fantome" coords="140,140,1590,730" onclick="ouvrirPopup(event, 'Callies-1-1-1')"></area><area alt="Callies-1-2-1" class="vignette ethno-narr" shape="rect" href="#fantome" coords="150,730,800,1460" onclick="ouvrirPopup(event, 'Callies-1-2-1')"></area><area alt="Callies-1-2-2" class="vignette ethno-narr" shape="rect" href="#fantome" coords="800,730,1575,1460" onclick="ouvrirPopup(event, 'Callies-1-2-2')"></area><area alt="Callies-1-3-1" class="vignette ethno-narr" shape="rect" href="#fantome" coords="140,1460,1575,2080" onclick="ouvrirPopup(event, 'Callies-1-3-1')"></area></map></div>
+            <div class="planche"><img src="../Images/085.jpg" class="planche" id="Callies-2" usemap="#map_Callies-2"></img><map id="map_Callies-2"><area alt="Callies-2-1-1" class="vignette ethno-narr" shape="rect" href="#fantome" coords="140,140,800,1050" onclick="ouvrirPopup(event, 'Callies-2-1-1')"></area><area alt="Callies-2-1-2" class="vignette ethno-narr" shape="rect" href="#fantome" coords="800,140,1575,1050" onclick="ouvrirPopup(event, 'Callies-2-1-2')"></area><area alt="Callies-2-2-1" class="vignette ethno-narr" shape="rect" href="#fantome" coords="140,1122,1575,1050" onclick="ouvrirPopup(event, 'Callies-2-2-1')"></area></map></div>
+            <div class="planche"><img src="../Images/086.jpg" class="planche" id="Callies-3" usemap="#map_Callies-3"></img><map id="map_Callies-3"><area alt="Callies-3-1-1" class="vignette ethno-narr" shape="rect" href="#fantome" coords="140,140,830,920" onclick="ouvrirPopup(event, 'Callies-3-1-1')"></area><area alt="Callies-3-1-2" class="vignette ethno-narr" shape="rect" href="#fantome" coords="830,140,1575,920" onclick="ouvrirPopup(event, 'Callies-3-1-2')"></area><area alt="Callies-3-2-1" class="vignette edit-narr" shape="rect" href="#fantome" coords="140,920,1575,1485" onclick="ouvrirPopup(event, 'Callies-3-2-1')"></area><area alt="Callies-3-3-1" class="vignette edit-narr" shape="rect" href="#fantome" coords="140,1485,740,2080" onclick="ouvrirPopup(event, 'Callies-3-3-1')"></area><area alt="Callies-3-3-2" class="vignette felin-narr" shape="rect" href="#fantome" coords="740,1485,1575,2080" onclick="ouvrirPopup(event, 'Callies-3-3-2')"></area></map></div>
+         </section>
+         <section class="section_texte">
+            <p class="titre_textuel">Primat de la richesse de l’époux versus non-reconnaissance du travail de
+               					l’épouse</p>
+            <p class="recit_textuel"><span class="phrase">La perspective explicitée par Jean Brunetti constitue une norme
+                  						implicite dans les tribunaux. </span><span class="phrase">Le primat de la richesse disponible des hommes dans le calcul des
+                  						prestations compensatoires est particulièrement saillant dans le cas des
+                  						couples d’indépendants. </span><span class="phrase">Ces dossiers sont en effet emblématiques de l’absence de reconnaissance
+                  						par le droit, du travail gratuit réalisé par les femmes dans les entreprises
+                  						dirigées par leur conjoint20.</span></p>
+            <p class="recit_textuel"><span class="phrase">Fabienne et Éric Callies, tous deux quadragénaires, entament une
+                  						procédure de divorce en 2006, après quinze ans de mariage. </span><span class="phrase">Ils sont horticulteurs et exploitent ensemble 1 600 mètres carrés de
+                  						serres qui appartiennent à Éric et à sa mère, dans l’est de la France. </span><span class="phrase">Durant les sept premières années de son mariage, Fabienne Callies a
+                  						travaillé dans l’entreprise familiale sans aucun statut légal. </span><span class="phrase">En 1999, elle est devenue conjointe-collaboratrice et cotise depuis lors
+                  						à la retraite et au chômage, sans toutefois être rémunérée. </span><span class="phrase">Dans l’assignation en divorce, elle réclame une prestation compensatoire
+                  						de 50 000 euros destinée à compenser la perte de niveau de vie liée à la
+                  						rupture, qui la laisse sans emploi, mais aussi sans logement. Cependant,
+                  						tout au long de la procédure, la situation matérielle de son ex-conjoint se
+                  						dégrade également. </span><span class="phrase">Alors qu’en novembre 2006 il évalue son revenu mensuel à 2 500 euros par
+                  						mois, dès février 2007 son avocat envoie un courrier au JAF : les revenus
+                  						d’Éric Callies ont diminué et il ne peut plus payer les pensions
+                  						alimentaires fixées (350 euros par mois pour son fils de quatorze ans qui
+                  						vit avec sa mère, 200 euros par mois pour son épouse au titre du devoir de
+                  						secours). </span><span class="phrase">Un an plus tard, pour le divorce sur le fond, l’avocat précise : « Dans
+                  						la mesure où Monsieur Callies est en entreprise individuelle, les revenus
+                  						précités constituent en fait les revenus que Monsieur et son épouse
+                  						parvenaient à dégager sur leur exploitation en tenant compte qu’ils étaient
+                  						deux. Depuis le départ de Madame Callies, le chiffre d’affaires et dans les
+                  						mêmes proportions les résultats dégagés ont largement chuté. »</span></p>
+            <p class="recit_textuel"><span class="phrase">Lors du jugement de mars 2009, le juge considère que les conditions ne
+                  						sont pas réunies pour que Fabienne Callies reçoive une prestation
+                  						compensatoire au titre de sa contribution gratuite à l’entreprise, au motif
+                  						que le divorce a provoqué un appauvrissement des deux époux et n’a donc pas
+                  						créé de disparité entre eux.</span></p>
+            <p class="recit_textuel"><span class="phrase">Les dossiers impliquant des chefs d’entreprise ou des indépendants
+                  						présentent fréquemment ce type d’issue : « retournement de la conjoncture »,
+                  						« difficultés du secteur », « dégradation du chiffre d’affaires », autant
+                  						d’arguments pour justifier avec plus ou moins de bonne foi une difficulté,
+                  						voire une incapacité à payer une prestation compensatoire. </span><span class="phrase">Certaines épouses, lorsqu’elles ont les moyens financiers et l’envie de
+                  						poursuivre la procédure, dénoncent l’« organisation de l’insolvabilité de
+                  						leur conjoint ».</span></p>
+            <p class="recit_textuel"><span class="phrase">Les JAF ont peu de moyens pour contrôler ces affirmations. </span><span class="phrase">Les juges hésitent toujours à ordonner des expertises comptables, car
+                  						elles coûtent cher aux parties (plusieurs milliers d’euros) ou, pire, en cas
+                  						d’aide juridictionnelle, à l’État. </span><span class="phrase">Ces investigations font état de situations qui sont rapidement périmées
+                  						et qui peuvent donc être contestées par les parties sitôt qu’elles sont
+                  						produites. </span><span class="phrase">Comme nous l’avons vu, les justiciables les plus fortuné·es peuvent
+                  						mobiliser de leur propre chef expertise contre expertise pour discuter de
+                  						l’estimation de leurs revenus et patrimoines. </span><span class="phrase">Mais quand la fortune des justiciables est moins importante, voire
+                  						fragilisée, et que les deux parties n’ont pas les moyens d’assumer les frais
+                  						de ces expertises, les JAF y renoncent souvent. </span><span class="phrase">Si c’est bien la richesse disponible de l’époux qui détermine largement
+                  						le montant de la prestation compensatoire, il s’agit généralement de la
+                  						richesse qu’il accepte de déclarer devant le tribunal.</span></p>
+         </section>
+      </main>
+      <section id="info_popup">
+         <div id="info_Callies-1-1-1" class="popup informations"><button class="fermer" onclick="fermerPopup(event)">✕</button><h4>Vignette Callies-1-1-1</h4>
+            <table>
+               <thead>
+                  <tr>
+                     <th>Types de personnages</th>
+                  </tr>
+               </thead>
+               <tbody>
+                  <tr>
+                     <td><a href="index_groupes.html#justiciables">Les justiciables</a></td>
+                  </tr>
+               </tbody>
+            </table>
+            <table>
+               <thead>
+                  <tr>
+                     <th>Types de récits</th>
+                  </tr>
+               </thead>
+               <tbody>
+                  <tr>
+                     <td><a href="index_recits.html#ethno-narr">Récit ethnographique</a></td>
+                  </tr>
+               </tbody>
+            </table>
+         </div>
+         <div id="info_Callies-1-2-1" class="popup informations"><button class="fermer" onclick="fermerPopup(event)">✕</button><h4>Vignette Callies-1-2-1</h4>
+            <table>
+               <thead>
+                  <tr>
+                     <th>Types de personnages</th>
+                  </tr>
+               </thead>
+               <tbody>
+                  <tr>
+                     <td><a href="index_groupes.html#justiciables">Les justiciables</a></td>
+                  </tr>
+               </tbody>
+            </table>
+            <table>
+               <thead>
+                  <tr>
+                     <th>Types de récits</th>
+                  </tr>
+               </thead>
+               <tbody>
+                  <tr>
+                     <td><a href="index_recits.html#ethno-narr">Récit ethnographique</a></td>
+                  </tr>
+               </tbody>
+            </table>
+         </div>
+         <div id="info_Callies-1-2-2" class="popup informations"><button class="fermer" onclick="fermerPopup(event)">✕</button><h4>Vignette Callies-1-2-2</h4>
+            <table>
+               <thead>
+                  <tr>
+                     <th>Types de personnages</th>
+                  </tr>
+               </thead>
+               <tbody>
+                  <tr>
+                     <td><a href="index_groupes.html#justiciables">Les justiciables</a></td>
+                  </tr>
+               </tbody>
+            </table>
+            <table>
+               <thead>
+                  <tr>
+                     <th>Types de récits</th>
+                  </tr>
+               </thead>
+               <tbody>
+                  <tr>
+                     <td><a href="index_recits.html#ethno-narr">Récit ethnographique</a></td>
+                  </tr>
+               </tbody>
+            </table>
+         </div>
+         <div id="info_Callies-1-3-1" class="popup informations"><button class="fermer" onclick="fermerPopup(event)">✕</button><h4>Vignette Callies-1-3-1</h4>
+            <table>
+               <thead>
+                  <tr>
+                     <th>Types de personnages</th>
+                  </tr>
+               </thead>
+               <tbody>
+                  <tr>
+                     <td><a href="index_groupes.html#justiciables">Les justiciables</a></td>
+                  </tr>
+               </tbody>
+            </table>
+            <table>
+               <thead>
+                  <tr>
+                     <th>Types de récits</th>
+                  </tr>
+               </thead>
+               <tbody>
+                  <tr>
+                     <td><a href="index_recits.html#ethno-narr">Récit ethnographique</a></td>
+                  </tr>
+               </tbody>
+            </table>
+         </div>
+         <div id="info_Callies-2-1-1" class="popup informations"><button class="fermer" onclick="fermerPopup(event)">✕</button><h4>Vignette Callies-2-1-1</h4>
+            <table>
+               <thead>
+                  <tr>
+                     <th>Types de personnages</th>
+                  </tr>
+               </thead>
+               <tbody>
+                  <tr>
+                     <td><a href="index_groupes.html#autre"></a></td>
+                  </tr>
+               </tbody>
+            </table>
+            <table>
+               <thead>
+                  <tr>
+                     <th>Types de récits</th>
+                  </tr>
+               </thead>
+               <tbody>
+                  <tr>
+                     <td><a href="index_recits.html#ethno-narr">Récit ethnographique</a></td>
+                  </tr>
+               </tbody>
+            </table>
+         </div>
+         <div id="info_Callies-2-1-2" class="popup informations"><button class="fermer" onclick="fermerPopup(event)">✕</button><h4>Vignette Callies-2-1-2</h4>
+            <table>
+               <thead>
+                  <tr>
+                     <th>Types de personnages</th>
+                  </tr>
+               </thead>
+               <tbody>
+                  <tr>
+                     <td><a href="index_groupes.html#autre"></a></td>
+                  </tr>
+               </tbody>
+            </table>
+            <table>
+               <thead>
+                  <tr>
+                     <th>Types de récits</th>
+                  </tr>
+               </thead>
+               <tbody>
+                  <tr>
+                     <td><a href="index_recits.html#ethno-narr">Récit ethnographique</a></td>
+                  </tr>
+               </tbody>
+            </table>
+         </div>
+         <div id="info_Callies-2-2-1" class="popup informations"><button class="fermer" onclick="fermerPopup(event)">✕</button><h4>Vignette Callies-2-2-1</h4>
+            <table>
+               <thead>
+                  <tr>
+                     <th>Types de personnages</th>
+                  </tr>
+               </thead>
+               <tbody>
+                  <tr>
+                     <td><a href="index_groupes.html#enqueteurices">Les enquêteur·ices</a></td>
+                  </tr>
+               </tbody>
+            </table>
+            <table>
+               <thead>
+                  <tr>
+                     <th>Types de récits</th>
+                  </tr>
+               </thead>
+               <tbody>
+                  <tr>
+                     <td><a href="index_recits.html#ethno-narr">Récit ethnographique</a></td>
+                  </tr>
+               </tbody>
+            </table>
+         </div>
+         <div id="info_Callies-3-1-1" class="popup informations"><button class="fermer" onclick="fermerPopup(event)">✕</button><h4>Vignette Callies-3-1-1</h4>
+            <table>
+               <thead>
+                  <tr>
+                     <th>Types de personnages</th>
+                  </tr>
+               </thead>
+               <tbody>
+                  <tr>
+                     <td><a href="index_groupes.html#justiciables">Les justiciables</a></td>
+                  </tr>
+               </tbody>
+            </table>
+            <table>
+               <thead>
+                  <tr>
+                     <th>Types de récits</th>
+                  </tr>
+               </thead>
+               <tbody>
+                  <tr>
+                     <td><a href="index_recits.html#ethno-narr">Récit ethnographique</a></td>
+                  </tr>
+               </tbody>
+            </table>
+         </div>
+         <div id="info_Callies-3-1-2" class="popup informations"><button class="fermer" onclick="fermerPopup(event)">✕</button><h4>Vignette Callies-3-1-2</h4>
+            <table>
+               <thead>
+                  <tr>
+                     <th>Types de personnages</th>
+                  </tr>
+               </thead>
+               <tbody>
+                  <tr>
+                     <td><a href="index_groupes.html#justiciables">Les justiciables</a></td>
+                  </tr>
+               </tbody>
+            </table>
+            <table>
+               <thead>
+                  <tr>
+                     <th>Types de récits</th>
+                  </tr>
+               </thead>
+               <tbody>
+                  <tr>
+                     <td><a href="index_recits.html#ethno-narr">Récit ethnographique</a></td>
+                  </tr>
+               </tbody>
+            </table>
+         </div>
+         <div id="info_Callies-3-2-1" class="popup informations"><button class="fermer" onclick="fermerPopup(event)">✕</button><h4>Vignette Callies-3-2-1</h4>
+            <table>
+               <thead>
+                  <tr>
+                     <th>Types de personnages</th>
+                  </tr>
+               </thead>
+               <tbody>
+                  <tr>
+                     <td><a href="index_groupes.html#enqueteurices">Les enquêteur·ices</a></td>
+                  </tr>
+               </tbody>
+            </table>
+            <table>
+               <thead>
+                  <tr>
+                     <th>Types de récits</th>
+                  </tr>
+               </thead>
+               <tbody>
+                  <tr>
+                     <td><a href="index_recits.html#edit-narr">Récit éditorial (mode narratif)</a></td>
+                  </tr>
+               </tbody>
+            </table>
+         </div>
+         <div id="info_Callies-3-3-1" class="popup informations"><button class="fermer" onclick="fermerPopup(event)">✕</button><h4>Vignette Callies-3-3-1</h4>
+            <table>
+               <thead>
+                  <tr>
+                     <th>Types de personnages</th>
+                  </tr>
+               </thead>
+               <tbody>
+                  <tr>
+                     <td><a href="index_groupes.html#enqueteurices">Les enquêteur·ices</a></td>
+                  </tr>
+               </tbody>
+            </table>
+            <table>
+               <thead>
+                  <tr>
+                     <th>Types de récits</th>
+                  </tr>
+               </thead>
+               <tbody>
+                  <tr>
+                     <td><a href="index_recits.html#edit-narr">Récit éditorial (mode narratif)</a></td>
+                  </tr>
+               </tbody>
+            </table>
+         </div>
+         <div id="info_Callies-3-3-2" class="popup informations"><button class="fermer" onclick="fermerPopup(event)">✕</button><h4>Vignette Callies-3-3-2</h4>
+            <table>
+               <thead>
+                  <tr>
+                     <th>Types de personnages</th>
+                  </tr>
+               </thead>
+               <tbody>
+                  <tr>
+                     <td><a href="index_groupes.html#enqueteurices">Les enquêteur·ices</a></td>
+                  </tr>
+               </tbody>
+            </table>
+            <table>
+               <thead>
+                  <tr>
+                     <th>Types de récits</th>
+                  </tr>
+               </thead>
+               <tbody>
+                  <tr>
+                     <td><a href="index_recits.html#felin-narr">Récit félin (mode narratif)</a></td>
+                  </tr>
+               </tbody>
+            </table>
+         </div>
+      </section>
+      <section id="accessibilite_popup">
+         <div id="acc_Callies-1-1-1" class="popup accessibilite"><button class="fermer" onclick="fermerPopup(event)">✕</button><h4>Vignette Callies-1-1-1</h4>
+            <table>
+               <thead>
+                  <tr>
+                     <th>Retranscription</th>
+                  </tr>
+               </thead>
+               <tbody>
+                  <tr>
+                     <td>
+                        <p><span class="speaker">Céline Bessière</span><span class="forme-bulle"> (cartouche)</span> : Fabienne et Éric Callies entament une procédure de
+                           											divorce après quinze ans de mariage.</p>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>
+                        <p><span class="speaker">Céline Bessière</span><span class="forme-bulle"> (cartouche)</span> : Ils travaillent dans l’horticulture et exploitent
+                           											ensemble 1 600m² de serres qui appartiennnet à Éric et à
+                           											sa mère.</p>
+                     </td>
+                  </tr>
+               </tbody>
+            </table>
+            <table>
+               <thead>
+                  <tr>
+                     <th>Description</th>
+                  </tr>
+               </thead>
+               <tbody>
+                  <tr>
+                     <td>
+                        <p>On voit les pots dans lesuqles il y a des plantations
+                           											(rosier, arbuste…) et des outils de jardinage et
+                           											d’horticulture (arosoir, tuyeau d’arosage).</p>
+                     </td>
+                  </tr>
+               </tbody>
+            </table>
+         </div>
+         <div id="acc_Callies-1-2-1" class="popup accessibilite"><button class="fermer" onclick="fermerPopup(event)">✕</button><h4>Vignette Callies-1-2-1</h4>
+            <table>
+               <thead>
+                  <tr>
+                     <th>Retranscription</th>
+                  </tr>
+               </thead>
+               <tbody>
+                  <tr>
+                     <td>
+                        <p><span class="speaker">Céline Bessière</span><span class="forme-bulle"> (cartouche)</span> : Durant les sept premières années de mariage, Fabienne
+                           											travaille dans l’entreprise familiale sans aucun statut
+                           											légal.</p>
+                     </td>
+                  </tr>
+               </tbody>
+            </table>
+            <table>
+               <thead>
+                  <tr>
+                     <th>Description</th>
+                  </tr>
+               </thead>
+               <tbody>
+                  <tr>
+                     <td>
+                        <p>Pas de description disponible pour cette vignette.</p>
+                     </td>
+                  </tr>
+               </tbody>
+            </table>
+         </div>
+         <div id="acc_Callies-1-2-2" class="popup accessibilite"><button class="fermer" onclick="fermerPopup(event)">✕</button><h4>Vignette Callies-1-2-2</h4>
+            <table>
+               <thead>
+                  <tr>
+                     <th>Retranscription</th>
+                  </tr>
+               </thead>
+               <tbody>
+                  <tr>
+                     <td>
+                        <p><span class="speaker">Céline Bessière</span><span class="forme-bulle"> (cartouche)</span> : Elle devient ensuite conjointe-collaboratrice : elle
+                           											n’est toujours pas rémunérée mais cotise pour la
+                           											retraite et le chômage.</p>
+                     </td>
+                  </tr>
+               </tbody>
+            </table>
+            <table>
+               <thead>
+                  <tr>
+                     <th>Description</th>
+                  </tr>
+               </thead>
+               <tbody>
+                  <tr>
+                     <td>
+                        <p>Dans le dos de Fabienne Callies, on voit un écriteau
+                           											sur lequel est marqué un prix. Voir la page de la notion
+                           											« inégalités » pour plus de détails.</p>
+                     </td>
+                  </tr>
+               </tbody>
+            </table>
+         </div>
+         <div id="acc_Callies-1-3-1" class="popup accessibilite"><button class="fermer" onclick="fermerPopup(event)">✕</button><h4>Vignette Callies-1-3-1</h4>
+            <table>
+               <thead>
+                  <tr>
+                     <th>Retranscription</th>
+                  </tr>
+               </thead>
+               <tbody>
+                  <tr>
+                     <td>
+                        <p><span class="speaker">Céline Bessière</span><span class="forme-bulle"> (cartouche)</span> : Dans l’assignation en divorce, elle demande une
+                           											prestation compensatoire de 50 000 €, puisque la rupture
+                           											la laissera sans emploi et sans logement.</p>
+                     </td>
+                  </tr>
+               </tbody>
+            </table>
+            <table>
+               <thead>
+                  <tr>
+                     <th>Description</th>
+                  </tr>
+               </thead>
+               <tbody>
+                  <tr>
+                     <td>
+                        <p>La serre et la maison derrière Fabienne Callies sont
+                           											barrées de deux croix : avec le divorce, elle n’y a plus
+                           											accès.</p>
+                     </td>
+                  </tr>
+               </tbody>
+            </table>
+         </div>
+         <div id="acc_Callies-2-1-1" class="popup accessibilite"><button class="fermer" onclick="fermerPopup(event)">✕</button><h4>Vignette Callies-2-1-1</h4>
+            <table>
+               <thead>
+                  <tr>
+                     <th>Retranscription</th>
+                  </tr>
+               </thead>
+               <tbody>
+                  <tr>
+                     <td>
+                        <p><span class="speaker">Céline Bessière</span><span class="forme-bulle"> (cartouche)</span> : Au long de la procédure, les revenus d’Éric diminuent
+                           											: il a du mal à faire marcher l’entreprise tout seul,
+                           											sans le travail fratuit de Fabienne.</p>
+                     </td>
+                  </tr>
+               </tbody>
+            </table>
+            <table>
+               <thead>
+                  <tr>
+                     <th>Description</th>
+                  </tr>
+               </thead>
+               <tbody>
+                  <tr>
+                     <td>
+                        <p>Un arosoir arose une plante sur laquelle pousse des
+                           											billets : le travail de Fabienne alimente l’entreprise
+                           											familiale.</p>
+                     </td>
+                  </tr>
+               </tbody>
+            </table>
+         </div>
+         <div id="acc_Callies-2-1-2" class="popup accessibilite"><button class="fermer" onclick="fermerPopup(event)">✕</button><h4>Vignette Callies-2-1-2</h4>
+            <table>
+               <thead>
+                  <tr>
+                     <th>Retranscription</th>
+                  </tr>
+               </thead>
+               <tbody>
+                  <tr>
+                     <td>
+                        <p><span class="speaker">Céline Bessière</span><span class="forme-bulle"> (cartouche)</span> : Il ne peut plus payer les pensions alimentaires
+                           											fixées pour son ex-épouse et leur fils qu’il vit avec
+                           											elle.</p>
+                     </td>
+                  </tr>
+               </tbody>
+            </table>
+            <table>
+               <thead>
+                  <tr>
+                     <th>Description</th>
+                  </tr>
+               </thead>
+               <tbody>
+                  <tr>
+                     <td>
+                        <p>L’arosoir ne coule plus et la plante est morte : sans
+                           											le travail de Fabienne, l’entreprise ne tient plus.</p>
+                     </td>
+                  </tr>
+               </tbody>
+            </table>
+         </div>
+         <div id="acc_Callies-2-2-1" class="popup accessibilite"><button class="fermer" onclick="fermerPopup(event)">✕</button><h4>Vignette Callies-2-2-1</h4>
+            <table>
+               <thead>
+                  <tr>
+                     <th>Retranscription</th>
+                  </tr>
+               </thead>
+               <tbody>
+                  <tr>
+                     <td>
+                        <p><span class="speaker">Céline Bessière</span><span class="forme-bulle"> (cartouche)</span> : Un an plus tard, son avocat écrit au juge des
+                           											affaires familiales.</p>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>
+                        <p><span class="speaker">Céline Bessière</span><span class="forme-bulle"> (bulle-parole)</span> : "Dans la mesure où monsieur Callies est une
+                           											entreprise individuelle, les revenus précités
+                           											constituent en fait les revenus que Monsieur et son
+                           											épouse parvenaient à dégager sur leur exploitation en
+                           											tenant compte qu’ils étaient deux."</p>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>
+                        <p><span class="speaker">Céline Bessière</span><span class="forme-bulle"> (bulle-parole)</span> : "Depuis le départ de madame Callies, le chiffre
+                           											d’affaire et, dans les mêmes proportions, les résultats
+                           											dégagés ont largement chuté."</p>
+                     </td>
+                  </tr>
+               </tbody>
+            </table>
+            <table>
+               <thead>
+                  <tr>
+                     <th>Description</th>
+                  </tr>
+               </thead>
+               <tbody>
+                  <tr>
+                     <td>
+                        <p>On voit le bureau de Céline Bessière et des dossiers
+                           											derrière elle : cela montre son quotidien de travail,
+                           											des archives, des dossiers, du tri.</p>
+                     </td>
+                  </tr>
+               </tbody>
+            </table>
+         </div>
+         <div id="acc_Callies-3-1-1" class="popup accessibilite"><button class="fermer" onclick="fermerPopup(event)">✕</button><h4>Vignette Callies-3-1-1</h4>
+            <table>
+               <thead>
+                  <tr>
+                     <th>Retranscription</th>
+                  </tr>
+               </thead>
+               <tbody>
+                  <tr>
+                     <td>
+                        <p><span class="speaker">Céline Bessière</span><span class="forme-bulle"> (cartouche)</span> : Sans surprise, la décision du juge est la suivante :
+                           											comme le divorce a provoqué l’appauvrissement des deux
+                           											époux, il n’a créé aucune disparité entre eux.</p>
+                     </td>
+                  </tr>
+               </tbody>
+            </table>
+            <table>
+               <thead>
+                  <tr>
+                     <th>Description</th>
+                  </tr>
+               </thead>
+               <tbody>
+                  <tr>
+                     <td>
+                        <p>Il y a un pot à côté de chaque membre du couple ; les
+                           											plantes qui y sont sont mortes, renvoyant au fait que
+                           											l’entreprise a coulé pour les deux.</p>
+                     </td>
+                  </tr>
+               </tbody>
+            </table>
+         </div>
+         <div id="acc_Callies-3-1-2" class="popup accessibilite"><button class="fermer" onclick="fermerPopup(event)">✕</button><h4>Vignette Callies-3-1-2</h4>
+            <table>
+               <thead>
+                  <tr>
+                     <th>Retranscription</th>
+                  </tr>
+               </thead>
+               <tbody>
+                  <tr>
+                     <td>
+                        <p><span class="speaker">Céline Bessière</span><span class="forme-bulle"> (cartouche)</span> : À ses yeux, les conditions ne sont donc pas réunies
+                           											pour que Fabienne Callies reçoive une prestation
+                           											compensatoire au titre de sa contribution gratuite à
+                           											l’entreprise.</p>
+                     </td>
+                  </tr>
+               </tbody>
+            </table>
+            <table>
+               <thead>
+                  <tr>
+                     <th>Description</th>
+                  </tr>
+               </thead>
+               <tbody>
+                  <tr>
+                     <td>
+                        <p>Au bras de Fabienne, on voit encore l’étiquette de
+                           											prix qui indique 0 €, elle tend les mains vides.</p>
+                     </td>
+                  </tr>
+               </tbody>
+            </table>
+         </div>
+         <div id="acc_Callies-3-2-1" class="popup accessibilite"><button class="fermer" onclick="fermerPopup(event)">✕</button><h4>Vignette Callies-3-2-1</h4>
+            <table>
+               <thead>
+                  <tr>
+                     <th>Retranscription</th>
+                  </tr>
+               </thead>
+               <tbody>
+                  <tr>
+                     <td>
+                        <p><span class="speaker">Jeanne Puchol</span><span class="forme-bulle"> (bulle-parole)</span> : Mais c’est complètement injuste !</p>
+                     </td>
+                  </tr>
+               </tbody>
+            </table>
+            <table>
+               <thead>
+                  <tr>
+                     <th>Description</th>
+                  </tr>
+               </thead>
+               <tbody>
+                  <tr>
+                     <td>
+                        <p>Pas de description disponible pour cette vignette.</p>
+                     </td>
+                  </tr>
+               </tbody>
+            </table>
+         </div>
+         <div id="acc_Callies-3-3-1" class="popup accessibilite"><button class="fermer" onclick="fermerPopup(event)">✕</button><h4>Vignette Callies-3-3-1</h4>
+            <table>
+               <thead>
+                  <tr>
+                     <th>Retranscription</th>
+                  </tr>
+               </thead>
+               <tbody>
+                  <tr>
+                     <td>
+                        <p><span class="speaker">Céline Bessière</span><span class="forme-bulle"> (bulle-parole)</span> : La prestation compensatoire ne dépend pas de ce qu’a
+                           											fait l’épouse en termes de travail domestique, et ici
+                           											professionnel…</p>
+                     </td>
+                  </tr>
+               </tbody>
+            </table>
+            <table>
+               <thead>
+                  <tr>
+                     <th>Description</th>
+                  </tr>
+               </thead>
+               <tbody>
+                  <tr>
+                     <td>
+                        <p>Pas de description disponible pour cette vignette.</p>
+                     </td>
+                  </tr>
+               </tbody>
+            </table>
+         </div>
+         <div id="acc_Callies-3-3-2" class="popup accessibilite"><button class="fermer" onclick="fermerPopup(event)">✕</button><h4>Vignette Callies-3-3-2</h4>
+            <table>
+               <thead>
+                  <tr>
+                     <th>Retranscription</th>
+                  </tr>
+               </thead>
+               <tbody>
+                  <tr>
+                     <td>
+                        <p><span class="speaker">Céline Bessière</span><span class="forme-bulle"> (bulle-parole)</span> : … mais de ceque peut verser le mari.</p>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>
+                        <p><span class="speaker">Sibylle Gollac</span><span class="forme-bulle"> (bulle-parole)</span> : Ou du moins, de ce qu’il déclare pouvoir verser.</p>
+                     </td>
+                  </tr>
+               </tbody>
+            </table>
+            <table>
+               <thead>
+                  <tr>
+                     <th>Description</th>
+                  </tr>
+               </thead>
+               <tbody>
+                  <tr>
+                     <td>
+                        <p>Pas de description disponible pour cette vignette.</p>
+                     </td>
+                  </tr>
+               </tbody>
+            </table>
+         </div>
+      </section>
+   </body>
+</html>

@@ -1,0 +1,7 @@
+/* ICONO */
+
+div.index_iconographie {
+	display:flex;
+	flex-wrap:wrap;
+	gap:8px;
+}

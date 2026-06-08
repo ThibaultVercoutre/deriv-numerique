@@ -1,0 +1,761 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html>
+<html lang="fr-FR">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></meta>
+      <title>Banque d'images</title>
+      <link rel="stylesheet" href="../Dependances/style_general.css" type="text/css"></link>
+      <link rel="stylesheet" href="../Dependances/style_galerie.css" type="text/css"></link><script src="../Dependances/Scripts_planches.js" charset="UTF-8"></script></head>
+   <body>
+      <header>
+         <h1>Galerie des images</h1>
+         <h2 class="subtitle">Amuse-toi à comparer les planches et les vignettes</h2>
+      </header>
+      <aside class="nav">
+         <h3>Navigation</h3>
+         <ul>
+            <li><button onclick="window.location='../accueil.html'">Accueil</button></li>
+            <li><select class="select_recit" onchange="window.location=this.value">
+                  <option value="recits_ethno">Récits ethnographiques</option>
+                  <option value="recit_Pilon.html">Famille Pilon</option>
+                  <option value="recit_Renoir.html">Famille Renoir</option>
+                  <option value="recit_Ginette.html">Ginette Durand</option>
+                  <option value="recit_Mougins.html">Nathalie Mougins</option>
+                  <option value="recit_PierreD.html">Pierre Delmas</option>
+                  <option value="recit_Dufournel.html">Famille Dufournel</option>
+                  <option value="recit_Brahimi.html">Couple Brahimi</option>
+                  <option value="recit_Callies.html">Couple Callies</option>
+                  <option value="recit_Landreau.html">Couple Landreau</option>
+                  <option value="recit_Dembele-Diakite.html">Couple Dembélé-Diakité</option>
+                  <option value="recit_Boulin-Martinez.html">Couple Boulin-Martinez</option>
+                  <option value="recit_Bensaid-Hattoub.html">Couple Bensaïd-Hattoub</option></select></li>
+            <li><button onclick="window.location='banque_images.html'">Galerie d'images</button></li>
+            <li><select class="select_index" onchange="window.location=this.value">
+                  <option value="index">Index</option>
+                  <option value="index_casting.html">Personnages</option>
+                  <option value="index_recits.html">Les types de récits</option>
+                  <option value="index_groupes.html">Les types de personnages</option></select></li>
+         </ul>
+      </aside>
+      <aside class="controls">
+         <h3>Mise en page</h3>
+         <ul>
+            <li><button id="comp" onclick="comparaison();">Mise en page comparative</button></li>
+            <li><button id="switchpv" onclick="switchpv();">Galerie des planches</button></li>
+         </ul>
+      </aside>
+      <main>
+         <section class="unit-planches" style="display: none">
+            <div class="filtres"><select class="type_récits" onchange="filter(event, 'recit')">
+                  <option value="tous">Tous les récits</option>
+                  <option value="Pilon">Famille Pilon</option>
+                  <option value="Renoir">Famille Renoir</option>
+                  <option value="Ginette">Ginette Durand</option>
+                  <option value="Mougins">Nathalie Mougins</option>
+                  <option value="PierreD">Pierre Delmas</option>
+                  <option value="Dufournel">Famille Dufournel</option>
+                  <option value="Brahimi">Couple Brahimi</option>
+                  <option value="Callies">Couple Callies</option>
+                  <option value="Landreau">Couple Landreau</option>
+                  <option value="Dembele-Diakite">Couple Dembélé-Diakité</option>
+                  <option value="Boulin-Martinez">Couple Boulin-Martinez</option>
+                  <option value="Bensaid-Hattoub">Couple Bensaïd-Hattoub</option></select></div>
+            <div class="recit" id="">
+               <h2>Famille Pilon</h2>
+               <table>
+                  <tr>
+                     <td><img class="galerie" src="../Images/012.jpg"></img></td>
+                     <td><img class="galerie" src="Images/013.jpg"></img></td>
+                  </tr>
+                  <tr>
+                     <td><img class="galerie" src="../Images/014.jpg"></img></td>
+                     <td><img class="galerie" src="Images/015.jpg"></img></td>
+                  </tr>
+               </table>
+            </div>
+            <div class="recit" id="">
+               <h2>Famille Renoir</h2>
+               <table>
+                  <tr>
+                     <td><img class="galerie" src="../Images/020.jpg"></img></td>
+                     <td><img class="galerie" src="Images/021.jpg"></img></td>
+                  </tr>
+                  <tr>
+                     <td><img class="galerie" src="../Images/022.jpg"></img></td>
+                     <td></td>
+                  </tr>
+                  <tr>
+                     <td><img class="galerie" src="../Images/026.jpg"></img></td>
+                     <td><img class="galerie" src="Images/027.jpg"></img></td>
+                  </tr>
+                  <tr>
+                     <td><img class="galerie" src="../Images/028.jpg"></img></td>
+                     <td></td>
+                  </tr>
+               </table>
+            </div>
+            <div class="recit" id="">
+               <h2>Ginette Durand</h2>
+               <table>
+                  <tr>
+                     <td><img class="galerie" src="../Images/036.jpg"></img></td>
+                     <td><img class="galerie" src="Images/037.jpg"></img></td>
+                  </tr>
+                  <tr>
+                     <td><img class="galerie" src="../Images/038.jpg"></img></td>
+                     <td><img class="galerie" src="Images/039.jpg"></img></td>
+                  </tr>
+                  <tr>
+                     <td><img class="galerie" src="../Images/040.jpg"></img></td>
+                     <td></td>
+                  </tr>
+               </table>
+            </div>
+            <div class="recit" id="">
+               <h2>Nathalie Mougins</h2>
+               <table>
+                  <tr>
+                     <td><img class="galerie" src="../Images/048.jpg"></img></td>
+                     <td><img class="galerie" src="Images/049.jpg"></img></td>
+                  </tr>
+                  <tr>
+                     <td><img class="galerie" src="../Images/050.jpg"></img></td>
+                     <td><img class="galerie" src="Images/051.jpg"></img></td>
+                  </tr>
+                  <tr>
+                     <td><img class="galerie" src="../Images/052.jpg"></img></td>
+                     <td></td>
+                  </tr>
+               </table>
+            </div>
+            <div class="recit" id="">
+               <h2>Pierre Delmas</h2>
+               <table>
+                  <tr>
+                     <td></td>
+                     <td><img class="galerie" src="../Images/057.jpg"></img></td>
+                  </tr>
+                  <tr>
+                     <td><img class="galerie" src="../Images/058.jpg"></img></td>
+                     <td><img class="galerie" src="Images/059.jpg"></img></td>
+                  </tr>
+               </table>
+            </div>
+            <div class="recit" id="">
+               <h2>Famille Dufournel</h2>
+               <table>
+                  <tr>
+                     <td><img class="galerie" src="../Images/066.jpg"></img></td>
+                     <td><img class="galerie" src="Images/067.jpg"></img></td>
+                  </tr>
+                  <tr>
+                     <td><img class="galerie" src="../Images/068.jpg"></img></td>
+                     <td><img class="galerie" src="Images/069.jpg"></img></td>
+                  </tr>
+                  <tr>
+                     <td><img class="galerie" src="../Images/070.jpg"></img></td>
+                     <td><img class="galerie" src="Images/071.jpg"></img></td>
+                  </tr>
+               </table>
+            </div>
+            <div class="recit" id="">
+               <h2>Couple Brahimi</h2>
+               <table>
+                  <tr>
+                     <td><img class="galerie" src="../Images/078.jpg"></img></td>
+                     <td><img class="galerie" src="Images/079.jpg"></img></td>
+                  </tr>
+                  <tr>
+                     <td><img class="galerie" src="../Images/048.jpg"></img></td>
+                     <td></td>
+                  </tr>
+               </table>
+            </div>
+            <div class="recit" id="">
+               <h2>Couple Callies</h2>
+               <table>
+                  <tr>
+                     <td><img class="galerie" src="../Images/084.jpg"></img></td>
+                     <td><img class="galerie" src="Images/085.jpg"></img></td>
+                  </tr>
+                  <tr>
+                     <td><img class="galerie" src="../Images/086.jpg"></img></td>
+                     <td></td>
+                  </tr>
+               </table>
+            </div>
+            <div class="recit" id="">
+               <h2>Couple Landreau</h2>
+               <table>
+                  <tr>
+                     <td><img class="galerie" src="../Images/090.jpg"></img></td>
+                     <td><img class="galerie" src="Images/091.jpg"></img></td>
+                  </tr>
+                  <tr>
+                     <td><img class="galerie" src="../Images/092.jpg"></img></td>
+                     <td><img class="galerie" src="Images/093.jpg"></img></td>
+                  </tr>
+                  <tr>
+                     <td><img class="galerie" src="../Images/094.jpg"></img></td>
+                     <td><img class="galerie" src="Images/095.jpg"></img></td>
+                  </tr>
+                  <tr>
+                     <td><img class="galerie" src="../Images/096.jpg"></img></td>
+                     <td></td>
+                  </tr>
+               </table>
+            </div>
+            <div class="recit" id="">
+               <h2>Couple Dembélé-Diakité</h2>
+               <table>
+                  <tr>
+                     <td></td>
+                     <td><img class="galerie" src="../Images/101.jpg"></img></td>
+                  </tr>
+                  <tr>
+                     <td><img class="galerie" src="../Images/102.jpg"></img></td>
+                     <td><img class="galerie" src="Images/103.jpg"></img></td>
+                  </tr>
+               </table>
+            </div>
+            <div class="recit" id="">
+               <h2>Couple Boulin-Martinez</h2>
+               <table>
+                  <tr>
+                     <td></td>
+                     <td><img class="galerie" src="../Images/109.jpg"></img></td>
+                  </tr>
+                  <tr>
+                     <td><img class="galerie" src="../Images/110.jpg"></img></td>
+                     <td><img class="galerie" src="Images/111.jpg"></img></td>
+                  </tr>
+               </table>
+            </div>
+            <div class="recit" id="">
+               <h2>Couple Bensaïd-Hattoub</h2>
+               <table>
+                  <tr>
+                     <td></td>
+                     <td><img class="galerie" src="../Images/113.jpg"></img></td>
+                  </tr>
+                  <tr>
+                     <td><img class="galerie" src="../Images/114.jpg"></img></td>
+                     <td><img class="galerie" src="Images/115.jpg"></img></td>
+                  </tr>
+               </table>
+            </div>
+         </section>
+         <section class="unit-vignettes">
+            <div class="filtres"><select class="select_recit" onchange="filter(event, 'banque')">
+                  <option value="tous" selected="selected">Type de récit</option>
+                  <option value="edit-narr">Récit éditorial (mode narratif)</option>
+                  <option value="edit-theo">Récit éditorial (mode théorique)</option>
+                  <option value="ethno-narr">Récit ethnographique</option>
+                  <option value="felin-narr">Récit félin (mode narratif)</option>
+                  <option value="felin-theo">Récit félin (mode théorique)</option></select><select class="select_perso" onchange="filter(event, 'banque')">
+                  <option value="tous" selected="selected">Personnage visible</option>
+                  <optgroup label="autre">
+                     <option value="Personne">Absence de pesonnages</option>
+                     <option value="narrateur">Narrateurice désincarné·e</option>
+                  </optgroup>
+                  <optgroup label="Chats">
+                     <option value="chat-abime">Chat abîmé</option>
+                     <option value="chat-blanc">Chat blanc</option>
+                     <option value="chat-long-blanc">Chat blanc à poils longs</option>
+                     <option value="chat-blanc-noir">Chat blanc-noir</option>
+                     <option value="chat-long-noir">Chat noir à poils longs</option>
+                     <option value="chat-tigre">Chat tigré</option>
+                  </optgroup>
+                  <optgroup label="Pilon">
+                     <option value="MarcelleP">Marcelle Pilon</option>
+                     <option value="MariMarcelleP">Mari de Marcelle Pilon</option>
+                     <option value="MichelineP">Micheline Pilon</option>
+                     <option value="MoniqueP">Monique Pilon</option>
+                     <option value="PierreP">Pierre Pilon</option>
+                     <option value="RoselineP">Roseline Pilon</option>
+                  </optgroup>
+                  <optgroup label="Renoir">
+                     <option value="AlainC">Alain Coulemelle</option>
+                     <option value="BenoîtR">Benoît Renoir</option>
+                     <option value="ChantalR">Chantal Renoir</option>
+                     <option value="ChristineR">Christine Renoir</option>
+                     <option value="ClaireR">Claire Renoir</option>
+                     <option value="FrançoiseR">Françoise Renoir</option>
+                     <option value="JacquelineR">Jacqueline Renoir</option>
+                     <option value="Jean-FrançoisR">Jean-François Renoir</option>
+                     <option value="Jean-PaulR">Jean-Paul Renoir</option>
+                     <option value="JuliaR">Julia Renoir</option>
+                     <option value="JérémieR">Jérémie Coulemelle</option>
+                     <option value="PaulR">Paul Renoir</option>
+                     <option value="RenéR">René Renoir</option>
+                     <option value="SamuelR">Samuel Renoir</option>
+                     <option value="SylvainR">Sylvain Renoir</option>
+                     <option value="ThéoR">Théo Renoir</option>
+                     <option value="TristanR">Tristan Renoir</option>
+                     <option value="VéroniqueR">Véronique Renoir</option>
+                  </optgroup>
+                  <optgroup label="Ginette">
+                     <option value="GinetteD">Ginette Durand</option>
+                  </optgroup>
+                  <optgroup label="Mougins">
+                     <option value="NathalieM">Nathalie Mougins</option>
+                  </optgroup>
+                  <optgroup label="Dufournel">
+                     <option value="AntoineD">Antoine Dufournel</option>
+                     <option value="ClaudineD">Claudine Dufournel</option>
+                     <option value="ColetteD">Colette Dufournel</option>
+                     <option value="DominiqueD">Dominique Dufournel</option>
+                     <option value="FrançoisD">François Dufournel</option>
+                     <option value="HuguetteD">Huguette Dufournel</option>
+                     <option value="Jean-PierreD">Jean-Pierre Dufournel</option>
+                     <option value="LucD">Luc Dufournel</option>
+                     <option value="MichelineD">Micheline Dufournel</option>
+                     <option value="RaymondD">Raymond Dufournel</option>
+                     <option value="RolandD">Roland Dufournel</option>
+                     <option value="YvonneD">Yvonne Dufournel</option>
+                  </optgroup>
+                  <optgroup label="Brahimi">
+                     <option value="AbdelkrimB">Abdelkrim Brahimi</option>
+                  </optgroup>
+                  <optgroup label="Callies">
+                     <option value="FabienneC">Fabienne Callies</option>
+                     <option value="EricC">Éric Callies</option>
+                  </optgroup>
+                  <optgroup label="Landreau">
+                     <option value="BlandineL">Blandine Landreau</option>
+                     <option value="JacquesL">Jacques Landreau</option>
+                  </optgroup>
+                  <optgroup label="Dembele-Diakite">
+                     <option value="FemmeMoussaD">Deuxième femme de Moussa Dembélé</option>
+                     <option value="FatimataD">Fatimata Diakité</option>
+                     <option value="MadiabaD">Madiaba Dembélé</option>
+                     <option value="MoussaD">Moussa Dembélé</option>
+                  </optgroup>
+                  <optgroup label="Boulin-Martinez">
+                     <option value="ArianeB">Ariane Boulin</option>
+                     <option value="FernandoM">Fernando Martinez</option>
+                  </optgroup>
+                  <optgroup label="Bensaid-Hattoub">
+                     <option value="AhmedB">Ahmed Bensaïd</option>
+                     <option value="KhadidjaH">Khadidja Hattoub</option>
+                  </optgroup>
+                  <optgroup label="Enqueteurices">
+                     <option value="AbigailB">Abigail Bourguignon</option>
+                     <option value="CamilleP">Camille Phé</option>
+                     <option value="CelineB">Céline Bessière</option>
+                     <option value="Enquetrice">Enquêtrice non nommée</option>
+                     <option value="HeleneS">Hélène Steinmetz</option>
+                     <option value="JeanneP">Jeanne Puchol</option>
+                     <option value="MarionA">Marion Azuelos</option>
+                     <option value="RomainP">Romain Piketty</option>
+                     <option value="SibylleG">Sibylle Gollac</option>
+                  </optgroup>
+                  <optgroup label="Juristes">
+                     <option value="AnnaDM">Anna De Mattéi</option>
+                     <option value="AurelieFC">Aurélie Fillod-Chabaud</option>
+                     <option value="AvocatJacquesL">Avocat de Jacques Landreau</option>
+                     <option value="AvocatMBrahimi">Avocat d’Adbelkrim Brahimi</option>
+                     <option value="AvocateBlandineL">Avocate de Blandine Landreau</option>
+                     <option value="AvocateMmeBrahimi">Avocate de Djamila Brahimi</option>
+                     <option value="AvocateKhadidjaH">Avocate de Khadidja Hattoub</option>
+                     <option value="AvocateAhmedB">Avocate d’Ahmed BensaÏd</option>
+                     <option value="ConseillereCA">Conseillère de la Cours d’appel</option>
+                     <option value="GraceDB">Grâce Dupond-Bernard</option>
+                     <option value="JeanB">Jean Brunetti</option>
+                     <option value="MichèleA">Michèle Abitbol</option>
+                     <option value="NadiaA">Nadia Asloum</option>
+                     <option value="PierreD">Pierre Delmas</option>
+                     <option value="Greffiere">greffière</option>
+                     <option value="juge">juge</option>
+                     <option value="EtienneP">Étienne Paletot</option>
+                  </optgroup></select><select class="select_perso" onchange="filter(event, 'banque')">
+                  <option value="tous" selected="selected">Personnage parlant</option>
+                  <optgroup label="autre">
+                     <option value="Personne-parole">Absence de pesonnages</option>
+                     <option value="narrateur-parole">Narrateurice désincarné·e</option>
+                  </optgroup>
+                  <optgroup label="Chats">
+                     <option value="chat-abime-parole">Chat abîmé</option>
+                     <option value="chat-blanc-parole">Chat blanc</option>
+                     <option value="chat-long-blanc-parole">Chat blanc à poils longs</option>
+                     <option value="chat-blanc-noir-parole">Chat blanc-noir</option>
+                     <option value="chat-long-noir-parole">Chat noir à poils longs</option>
+                     <option value="chat-tigre-parole">Chat tigré</option>
+                  </optgroup>
+                  <optgroup label="Pilon">
+                     <option value="MarcelleP-parole">Marcelle Pilon</option>
+                     <option value="MariMarcelleP-parole">Mari de Marcelle Pilon</option>
+                     <option value="MichelineP-parole">Micheline Pilon</option>
+                     <option value="MoniqueP-parole">Monique Pilon</option>
+                     <option value="PierreP-parole">Pierre Pilon</option>
+                     <option value="RoselineP-parole">Roseline Pilon</option>
+                  </optgroup>
+                  <optgroup label="Renoir">
+                     <option value="AlainC-parole">Alain Coulemelle</option>
+                     <option value="BenoîtR-parole">Benoît Renoir</option>
+                     <option value="ChantalR-parole">Chantal Renoir</option>
+                     <option value="ChristineR-parole">Christine Renoir</option>
+                     <option value="ClaireR-parole">Claire Renoir</option>
+                     <option value="FrançoiseR-parole">Françoise Renoir</option>
+                     <option value="JacquelineR-parole">Jacqueline Renoir</option>
+                     <option value="Jean-FrançoisR-parole">Jean-François Renoir</option>
+                     <option value="Jean-PaulR-parole">Jean-Paul Renoir</option>
+                     <option value="JuliaR-parole">Julia Renoir</option>
+                     <option value="JérémieR-parole">Jérémie Coulemelle</option>
+                     <option value="PaulR-parole">Paul Renoir</option>
+                     <option value="RenéR-parole">René Renoir</option>
+                     <option value="SamuelR-parole">Samuel Renoir</option>
+                     <option value="SylvainR-parole">Sylvain Renoir</option>
+                     <option value="ThéoR-parole">Théo Renoir</option>
+                     <option value="TristanR-parole">Tristan Renoir</option>
+                     <option value="VéroniqueR-parole">Véronique Renoir</option>
+                  </optgroup>
+                  <optgroup label="Ginette">
+                     <option value="GinetteD-parole">Ginette Durand</option>
+                  </optgroup>
+                  <optgroup label="Mougins">
+                     <option value="NathalieM-parole">Nathalie Mougins</option>
+                  </optgroup>
+                  <optgroup label="Dufournel">
+                     <option value="AntoineD-parole">Antoine Dufournel</option>
+                     <option value="ClaudineD-parole">Claudine Dufournel</option>
+                     <option value="ColetteD-parole">Colette Dufournel</option>
+                     <option value="DominiqueD-parole">Dominique Dufournel</option>
+                     <option value="FrançoisD-parole">François Dufournel</option>
+                     <option value="HuguetteD-parole">Huguette Dufournel</option>
+                     <option value="Jean-PierreD-parole">Jean-Pierre Dufournel</option>
+                     <option value="LucD-parole">Luc Dufournel</option>
+                     <option value="MichelineD-parole">Micheline Dufournel</option>
+                     <option value="RaymondD-parole">Raymond Dufournel</option>
+                     <option value="RolandD-parole">Roland Dufournel</option>
+                     <option value="YvonneD-parole">Yvonne Dufournel</option>
+                  </optgroup>
+                  <optgroup label="Brahimi">
+                     <option value="AbdelkrimB-parole">Abdelkrim Brahimi</option>
+                  </optgroup>
+                  <optgroup label="Callies">
+                     <option value="FabienneC-parole">Fabienne Callies</option>
+                     <option value="EricC-parole">Éric Callies</option>
+                  </optgroup>
+                  <optgroup label="Landreau">
+                     <option value="BlandineL-parole">Blandine Landreau</option>
+                     <option value="JacquesL-parole">Jacques Landreau</option>
+                  </optgroup>
+                  <optgroup label="Dembele-Diakite">
+                     <option value="FemmeMoussaD-parole">Deuxième femme de Moussa Dembélé</option>
+                     <option value="FatimataD-parole">Fatimata Diakité</option>
+                     <option value="MadiabaD-parole">Madiaba Dembélé</option>
+                     <option value="MoussaD-parole">Moussa Dembélé</option>
+                  </optgroup>
+                  <optgroup label="Boulin-Martinez">
+                     <option value="ArianeB-parole">Ariane Boulin</option>
+                     <option value="FernandoM-parole">Fernando Martinez</option>
+                  </optgroup>
+                  <optgroup label="Bensaid-Hattoub">
+                     <option value="AhmedB-parole">Ahmed Bensaïd</option>
+                     <option value="KhadidjaH-parole">Khadidja Hattoub</option>
+                  </optgroup>
+                  <optgroup label="Enqueteurices">
+                     <option value="AbigailB-parole">Abigail Bourguignon</option>
+                     <option value="CamilleP-parole">Camille Phé</option>
+                     <option value="CelineB-parole">Céline Bessière</option>
+                     <option value="Enquetrice-parole">Enquêtrice non nommée</option>
+                     <option value="HeleneS-parole">Hélène Steinmetz</option>
+                     <option value="JeanneP-parole">Jeanne Puchol</option>
+                     <option value="MarionA-parole">Marion Azuelos</option>
+                     <option value="RomainP-parole">Romain Piketty</option>
+                     <option value="SibylleG-parole">Sibylle Gollac</option>
+                  </optgroup>
+                  <optgroup label="Juristes">
+                     <option value="AnnaDM-parole">Anna De Mattéi</option>
+                     <option value="AurelieFC-parole">Aurélie Fillod-Chabaud</option>
+                     <option value="AvocatJacquesL-parole">Avocat de Jacques Landreau</option>
+                     <option value="AvocatMBrahimi-parole">Avocat d’Adbelkrim Brahimi</option>
+                     <option value="AvocateBlandineL-parole">Avocate de Blandine Landreau</option>
+                     <option value="AvocateMmeBrahimi-parole">Avocate de Djamila Brahimi</option>
+                     <option value="AvocateKhadidjaH-parole">Avocate de Khadidja Hattoub</option>
+                     <option value="AvocateAhmedB-parole">Avocate d’Ahmed BensaÏd</option>
+                     <option value="ConseillereCA-parole">Conseillère de la Cours d’appel</option>
+                     <option value="GraceDB-parole">Grâce Dupond-Bernard</option>
+                     <option value="JeanB-parole">Jean Brunetti</option>
+                     <option value="MichèleA-parole">Michèle Abitbol</option>
+                     <option value="NadiaA-parole">Nadia Asloum</option>
+                     <option value="PierreD-parole">Pierre Delmas</option>
+                     <option value="Greffiere-parole">greffière</option>
+                     <option value="juge-parole">juge</option>
+                     <option value="EtienneP-parole">Étienne Paletot</option>
+                  </optgroup></select></div>
+            <div class="galerie_div">
+               <div class="banque ethno-narr MichelineP-stage MichelineP MoniqueP-stage MoniqueP RoselineP-stage RoselineP MarcelleP-stage MarcelleP PierreP-stage PierreP chat-tigre-parole chat-tigre chat-tigre-parole chat-tigre chat-tigre-parole chat-tigre " style="    background-image: url('../Images/012.jpg');    width: 333.5px;    height: 292.56px;    background-size: 393.53000000000003px 517.5px;    background-position: -29.900000000000002px -29.900000000000002px;"></div>
+               <div class="banque felin-narr chat-blanc-noir-stage chat-blanc-noir chat-blanc-noir-parole chat-blanc-noir " style="    background-image: url('../Images/012.jpg');    width: 110.4px;    height: 153.41px;    background-size: 393.53000000000003px 517.5px;    background-position: -29.900000000000002px -325.45px;"></div>
+               <div class="banque felin-narr chat-long-blanc-stage chat-long-blanc chat-long-blanc-parole chat-long-blanc " style="    background-image: url('../Images/012.jpg');    width: 111.55000000000001px;    height: 153.41px;    background-size: 393.53000000000003px 517.5px;    background-position: -140.3px -325.45px;"></div>
+               <div class="banque felin-narr chat-tigre-stage chat-tigre chat-long-blanc-parole chat-long-blanc chat-tigre-parole chat-tigre " style="    background-image: url('../Images/012.jpg');    width: 110.86px;    height: 153.41px;    background-size: 393.53000000000003px 517.5px;    background-position: -252.54000000000002px -325.45px;"></div>
+               <div class="banque ethno-narr MarcelleP-stage MarcelleP PierreP-stage PierreP chat-tigre-parole chat-tigre " style="    background-image: url('../Images/013.jpg');    width: 162.15px;    height: 175.95000000000002px;    background-size: 393.53000000000003px 517.5px;    background-position: -29.900000000000002px -29.900000000000002px;"></div>
+               <div class="banque ethno-narr MichelineP-stage MichelineP RoselineP-stage RoselineP MoniqueP-stage MoniqueP MarcelleP-stage MarcelleP chat-tigre-parole chat-tigre " style="    background-image: url('../Images/013.jpg');    width: 171.35px;    height: 175.95000000000002px;    background-size: 393.53000000000003px 517.5px;    background-position: -192.05px -29.900000000000002px;"></div>
+               <div class="banque ethno-narr PierreP-stage PierreP chat-tigre-parole chat-tigre " style="    background-image: url('../Images/013.jpg');    width: 162.15px;    height: 174.57000000000002px;    background-size: 393.53000000000003px 517.5px;    background-position: -29.900000000000002px -204.93px;"></div>
+               <div class="banque ethno-narr MichelineP-stage MichelineP RoselineP-stage RoselineP MoniqueP-stage MoniqueP PierreP-stage PierreP chat-tigre-parole chat-tigre " style="    background-image: url('../Images/013.jpg');    width: 171.35px;    height: 174.57000000000002px;    background-size: 393.53000000000003px 517.5px;    background-position: -192.05px -204.93px;"></div>
+               <div class="banque felin-narr chat-long-noir-stage chat-long-noir chat-long-noir-parole chat-long-noir chat-long-noir-parole chat-long-noir " style="    background-image: url('../Images/013.jpg');    width: 333.5px;    height: 95.22px;    background-size: 393.53000000000003px 517.5px;    background-position: -29.900000000000002px -380.88px;"></div>
+               <div class="banque felin-narr chat-long-noir-stage chat-long-noir chat-long-noir-parole chat-long-noir chat-long-noir-parole chat-long-noir " style="    background-image: url('../Images/014.jpg');    width: 211.60000000000002px;    height: 111.55000000000001px;    background-size: 393.53000000000003px 517.5px;    background-position: -29.900000000000002px -29.900000000000002px;"></div>
+               <div class="banque felin-narr chat-tigre-stage chat-tigre chat-tigre-parole chat-tigre chat-tigre-parole chat-tigre " style="    background-image: url('../Images/014.jpg');    width: 121.9px;    height: 110.4px;    background-size: 393.53000000000003px 517.5px;    background-position: -241.5px -29.900000000000002px;"></div>
+               <div class="banque ethno-narr MichelineP-stage MichelineP PierreP-stage PierreP RoselineP-stage RoselineP MoniqueP-stage MoniqueP MarcelleP-stage MarcelleP chat-tigre-parole chat-tigre " style="    background-image: url('../Images/014.jpg');    width: 143.29px;    height: 145.13px;    background-size: 393.53000000000003px 517.5px;    background-position: -29.900000000000002px -142.6px;"></div>
+               <div class="banque ethno-narr MarcelleP-stage MarcelleP SibylleG-stage SibylleG chat-tigre-parole chat-tigre chat-tigre-parole chat-tigre " style="    background-image: url('../Images/014.jpg');    width: 190.21px;    height: 145.13px;    background-size: 393.53000000000003px 517.5px;    background-position: -173.19px -142.6px;"></div>
+               <div class="banque ethno-narr MichelineP-stage MichelineP SibylleG-stage SibylleG chat-tigre-parole chat-tigre " style="    background-image: url('../Images/014.jpg');    width: 118.45px;    height: 192.05px;    background-size: 393.53000000000003px 517.5px;    background-position: -29.900000000000002px -287.5px;"></div>
+               <div class="banque ethno-narr RoselineP-stage RoselineP SibylleG-stage SibylleG chat-tigre-parole chat-tigre " style="    background-image: url('../Images/014.jpg');    width: 111.55000000000001px;    height: 192.05px;    background-size: 393.53000000000003px 517.5px;    background-position: -148.35px -287.5px;"></div>
+               <div class="banque ethno-narr MoniqueP-stage MoniqueP SibylleG-stage SibylleG chat-tigre-parole chat-tigre " style="    background-image: url('../Images/014.jpg');    width: 103.5px;    height: 192.05px;    background-size: 393.53000000000003px 517.5px;    background-position: -259.90000000000003px -287.5px;"></div>
+               <div class="banque ethno-narr MoniqueP-stage MoniqueP PierreP-stage PierreP MichelineP-stage MichelineP MarcelleP-stage MarcelleP RoselineP-stage RoselineP chat-tigre-parole chat-tigre " style="    background-image: url('../Images/015.jpg');    width: 159.85px;    height: 161px;    background-size: 393.53000000000003px 517.5px;    background-position: -29.900000000000002px -29.900000000000002px;"></div>
+               <div class="banque ethno-narr MoniqueP-stage MoniqueP PierreP-stage PierreP MichelineP-stage MichelineP MarcelleP-stage MarcelleP RoselineP-stage RoselineP chat-tigre-parole chat-tigre " style="    background-image: url('../Images/015.jpg');    width: 173.65px;    height: 161px;    background-size: 393.53000000000003px 517.5px;    background-position: -189.75px -29.900000000000002px;"></div>
+               <div class="banque ethno-narr MoniqueP-stage MoniqueP RoselineP-stage RoselineP PierreP-stage PierreP chat-tigre-parole chat-tigre " style="    background-image: url('../Images/015.jpg');    width: 333.5px;    height: 161px;    background-size: 393.53000000000003px 517.5px;    background-position: -29.900000000000002px -188.6px;"></div>
+               <div class="banque felin-narr chat-long-noir-stage chat-long-noir chat-long-blanc-stage chat-long-blanc chat-long-blanc-parole chat-long-blanc chat-long-blanc-parole chat-long-blanc " style="    background-image: url('../Images/015.jpg');    width: 185.38px;    height: 132.25px;    background-size: 393.53000000000003px 517.5px;    background-position: -29.900000000000002px -347.3px;"></div>
+               <div class="banque felin-narr chat-tigre-stage chat-tigre chat-blanc-stage chat-blanc chat-blanc-noir-stage chat-blanc-noir chat-tigre-parole chat-tigre chat-tigre-parole chat-tigre " style="    background-image: url('../Images/015.jpg');    width: 148.12px;    height: 132.25px;    background-size: 393.53000000000003px 517.5px;    background-position: -215.28px -347.3px;"></div>
+               <div class="banque ethno-narr JacquelineR-stage JacquelineR RenéR-stage RenéR Jean-PaulR-stage Jean-PaulR ChristineR-stage ChristineR ClaireR-stage ClaireR SylvainR-stage SylvainR PaulR-stage PaulR ChantalR-stage ChantalR BenoîtR-stage BenoîtR TristanR-stage TristanR VéroniqueR-stage VéroniqueR JuliaR-stage JuliaR JérémieR-stage JérémieR Jean-FrançoisR-stage Jean-FrançoisR SamuelR-stage SamuelR ThéoR-stage ThéoR FrançoiseR-stage FrançoiseR AlainC-stage AlainC SibylleG-parole SibylleG SibylleG-parole SibylleG ClaireR-parole ClaireR ClaireR-parole ClaireR ClaireR-parole ClaireR ClaireR-parole ClaireR " style="    background-image: url('../Images/020.jpg');    width: 333.5px;    height: 449.65000000000003px;    background-size: 393.53000000000003px 517.5px;    background-position: -29.900000000000002px -29.900000000000002px;"></div>
+               <div class="banque ethno-narr ClaireR-stage ClaireR ChristineR-stage ChristineR JacquelineR-stage JacquelineR Jean-PaulR-stage Jean-PaulR SylvainR-stage SylvainR FrançoiseR-stage FrançoiseR ClaireR-parole ClaireR ClaireR-parole ClaireR ClaireR-parole ClaireR ClaireR-parole ClaireR ClaireR-parole ClaireR ClaireR-parole ClaireR ClaireR-parole ClaireR narrateur-parole narrateur " style="    background-image: url('../Images/021.jpg');    width: 333.5px;    height: 310.5px;    background-size: 393.53000000000003px 517.5px;    background-position: -29.900000000000002px -29.900000000000002px;"></div>
+               <div class="banque edit-narr SibylleG-stage SibylleG SibylleG-parole SibylleG " style="    background-image: url('../Images/021.jpg');    width: 194.35px;    height: 148.35px;    background-size: 393.53000000000003px 517.5px;    background-position: -29.900000000000002px -331.2px;"></div>
+               <div class="banque ethno-narr SylvainR-stage SylvainR SibylleG-stage SibylleG SylvainR-parole SylvainR " style="    background-image: url('../Images/021.jpg');    width: 139.15px;    height: 164.45000000000002px;    background-size: 393.53000000000003px 517.5px;    background-position: -224.25px -315.1px;"></div>
+               <div class="banque ethno-narr JacquelineR-stage JacquelineR SylvainR-stage SylvainR SibylleG-parole SibylleG " style="    background-image: url('../Images/022.jpg');    width: 167.9px;    height: 150.88px;    background-size: 393.53000000000003px 517.5px;    background-position: -29.900000000000002px -29.900000000000002px;"></div>
+               <div class="banque ethno-narr SylvainR-stage SylvainR Jean-FrançoisR-stage Jean-FrançoisR JérémieR-stage JérémieR BenoîtR-stage BenoîtR SamuelR-stage SamuelR ThéoR-stage ThéoR TristanR-stage TristanR SibylleG-parole SibylleG " style="    background-image: url('../Images/022.jpg');    width: 165.6px;    height: 150.88px;    background-size: 393.53000000000003px 517.5px;    background-position: -197.8px -29.900000000000002px;"></div>
+               <div class="banque ethno-narr SylvainR-stage SylvainR Jean-FrançoisR-stage Jean-FrançoisR SibylleG-parole SibylleG " style="    background-image: url('../Images/022.jpg');    width: 167.9px;    height: 152.72px;    background-size: 393.53000000000003px 517.5px;    background-position: -29.900000000000002px -180.78px;"></div>
+               <div class="banque ethno-narr Jean-PaulR-stage Jean-PaulR SibylleG-parole SibylleG " style="    background-image: url('../Images/022.jpg');    width: 165.6px;    height: 152.72px;    background-size: 393.53000000000003px 517.5px;    background-position: -197.8px -180.78px;"></div>
+               <div class="banque ethno-narr Jean-PaulR-stage Jean-PaulR SibylleG-parole SibylleG " style="    background-image: url('../Images/022.jpg');    width: 167.9px;    height: 146.05px;    background-size: 393.53000000000003px 517.5px;    background-position: -29.900000000000002px -333.5px;"></div>
+               <div class="banque ethno-narr Jean-PaulR-stage Jean-PaulR JacquelineR-stage JacquelineR SylvainR-stage SylvainR SibylleG-parole SibylleG " style="    background-image: url('../Images/022.jpg');    width: 165.6px;    height: 146.05px;    background-size: 393.53000000000003px 517.5px;    background-position: -197.8px -333.5px;"></div>
+               <div class="banque ethno-narr AlainC-stage AlainC ChristineR-stage ChristineR SibylleG-parole SibylleG " style="    background-image: url('../Images/026.jpg');    width: 169.05px;    height: 154.1px;    background-size: 393.53000000000003px 517.5px;    background-position: -29.900000000000002px -29.900000000000002px;"></div>
+               <div class="banque ethno-narr AlainC-stage AlainC SibylleG-stage SibylleG AlainC-parole AlainC " style="    background-image: url('../Images/026.jpg');    width: 164.45000000000002px;    height: 154.1px;    background-size: 393.53000000000003px 517.5px;    background-position: -198.95000000000002px -29.900000000000002px;"></div>
+               <div class="banque ethno-narr AlainC-stage AlainC ChristineR-stage ChristineR SibylleG-parole SibylleG SibylleG-parole SibylleG " style="    background-image: url('../Images/026.jpg');    width: 333.5px;    height: 152.95000000000002px;    background-size: 393.53000000000003px 517.5px;    background-position: -29.900000000000002px -184px;"></div>
+               <div class="banque ethno-narr ChristineR-stage ChristineR SibylleG-parole SibylleG SibylleG-parole SibylleG " style="    background-image: url('../Images/026.jpg');    width: 163.3px;    height: 142.6px;    background-size: 393.53000000000003px 517.5px;    background-position: -29.900000000000002px -336.95px;"></div>
+               <div class="banque ethno-narr Jean-PaulR-stage Jean-PaulR ChristineR-stage ChristineR FrançoiseR-stage FrançoiseR SibylleG-parole SibylleG " style="    background-image: url('../Images/026.jpg');    width: 170.20000000000002px;    height: 142.6px;    background-size: 393.53000000000003px 517.5px;    background-position: -193.20000000000002px -336.95px;"></div>
+               <div class="banque ethno-narr ClaireR-stage ClaireR SibylleG-stage SibylleG ClaireR-parole ClaireR " style="    background-image: url('../Images/027.jpg');    width: 167.9px;    height: 149.5px;    background-size: 393.53000000000003px 517.5px;    background-position: -29.900000000000002px -29.900000000000002px;"></div>
+               <div class="banque ethno-narr ClaireR-stage ClaireR SibylleG-stage SibylleG ClaireR-parole ClaireR ClaireR-parole ClaireR " style="    background-image: url('../Images/027.jpg');    width: 165.6px;    height: 149.5px;    background-size: 393.53000000000003px 517.5px;    background-position: -197.8px -29.900000000000002px;"></div>
+               <div class="banque ethno-narr ChristineR-stage ChristineR ClaireR-stage ClaireR ChristineR-parole ChristineR ChristineR-parole ChristineR " style="    background-image: url('../Images/027.jpg');    width: 167.9px;    height: 157.55px;    background-size: 393.53000000000003px 517.5px;    background-position: -29.900000000000002px -179.4px;"></div>
+               <div class="banque ethno-narr ChristineR-stage ChristineR ClaireR-stage ClaireR ChristineR-parole ChristineR ChristineR-parole ChristineR " style="    background-image: url('../Images/027.jpg');    width: 165.6px;    height: 157.55px;    background-size: 393.53000000000003px 517.5px;    background-position: -197.8px -179.4px;"></div>
+               <div class="banque ethno-narr ChristineR-stage ChristineR ClaireR-stage ClaireR ChristineR-parole ChristineR " style="    background-image: url('../Images/027.jpg');    width: 167.9px;    height: 142.6px;    background-size: 393.53000000000003px 517.5px;    background-position: -29.900000000000002px -336.95px;"></div>
+               <div class="banque ethno-narr SibylleG-stage SibylleG ClaireR-stage ClaireR ClaireR-parole ClaireR " style="    background-image: url('../Images/027.jpg');    width: 165.6px;    height: 142.6px;    background-size: 393.53000000000003px 517.5px;    background-position: -197.8px -336.95px;"></div>
+               <div class="banque ethno-narr AlainC-stage AlainC SibylleG-parole SibylleG " style="    background-image: url('../Images/028.jpg');    width: 167.9px;    height: 150.65px;    background-size: 393.53000000000003px 517.5px;    background-position: -29.900000000000002px -29.900000000000002px;"></div>
+               <div class="banque ethno-narr SylvainR-stage SylvainR SylvainR-parole SylvainR " style="    background-image: url('../Images/028.jpg');    width: 165.6px;    height: 150.65px;    background-size: 393.53000000000003px 517.5px;    background-position: -197.8px -29.900000000000002px;"></div>
+               <div class="banque ethno-narr SylvainR-stage SylvainR SibylleG-stage SibylleG SylvainR-parole SylvainR SylvainR-parole SylvainR " style="    background-image: url('../Images/028.jpg');    width: 167.9px;    height: 149.5px;    background-size: 393.53000000000003px 517.5px;    background-position: -29.900000000000002px -180.55px;"></div>
+               <div class="banque ethno-narr ChristineR-stage ChristineR JérémieR-stage JérémieR AlainC-stage AlainC SylvainR-parole SylvainR " style="    background-image: url('../Images/028.jpg');    width: 165.6px;    height: 149.5px;    background-size: 393.53000000000003px 517.5px;    background-position: -197.8px -180.55px;"></div>
+               <div class="banque ethno-narr ChristineR-stage ChristineR AlainC-stage AlainC JérémieR-stage JérémieR SylvainR-parole SylvainR " style="    background-image: url('../Images/028.jpg');    width: 167.9px;    height: 149.5px;    background-size: 393.53000000000003px 517.5px;    background-position: -29.900000000000002px -330.05px;"></div>
+               <div class="banque ethno-narr SylvainR-stage SylvainR SylvainR-parole SylvainR " style="    background-image: url('../Images/028.jpg');    width: 165.6px;    height: 149.5px;    background-size: 393.53000000000003px 517.5px;    background-position: -197.8px -330.05px;"></div>
+               <div class="banque ethno-narr GraceDB-stage GraceDB GinetteD-stage GinetteD chat-tigre-parole chat-tigre GinetteD-parole GinetteD " style="    background-image: url('../Images/036.jpg');    width: 341.55px;    height: 138.69px;    background-size: 393.53000000000003px 517.5px;    background-position: -26.220000000000002px -26.220000000000002px;"></div>
+               <div class="banque ethno-narr CelineB-stage CelineB SibylleG-stage SibylleG GinetteD-stage GinetteD GinetteD-parole GinetteD " style="    background-image: url('../Images/036.jpg');    width: 115.92px;    height: 169.74px;    background-size: 393.53000000000003px 517.5px;    background-position: -28.98px -145.59px;"></div>
+               <div class="banque ethno-narr GraceDB-stage GraceDB GraceDB-parole GraceDB " style="    background-image: url('../Images/036.jpg');    width: 221.49px;    height: 123.51px;    background-size: 393.53000000000003px 517.5px;    background-position: -145.59px -155.94px;"></div>
+               <div class="banque ethno-narr CelineB-stage CelineB SibylleG-stage SibylleG GraceDB-stage GraceDB GinetteD-stage GinetteD GinetteD-parole GinetteD GinetteD-parole GinetteD " style="    background-image: url('../Images/036.jpg');    width: 87.63000000000001px;    height: 153.18px;    background-size: 393.53000000000003px 517.5px;    background-position: -279.45px -155.94px;"></div>
+               <div class="banque ethno-narr GinetteD-stage GinetteD GinetteD-parole GinetteD GinetteD-parole GinetteD " style="    background-image: url('../Images/036.jpg');    width: 125.58000000000001px;    height: 175.26000000000002px;    background-size: 393.53000000000003px 517.5px;    background-position: -24.84px -306.36px;"></div>
+               <div class="banque ethno-narr GraceDB-stage GraceDB GinetteD-stage GinetteD GinetteD-parole GinetteD " style="    background-image: url('../Images/036.jpg');    width: 117.30000000000001px;    height: 175.26000000000002px;    background-size: 393.53000000000003px 517.5px;    background-position: -150.42000000000002px -306.36px;"></div>
+               <div class="banque ethno-narr GraceDB-stage GraceDB GraceDB-parole GraceDB " style="    background-image: url('../Images/036.jpg');    width: 99.36px;    height: 175.26000000000002px;    background-size: 393.53000000000003px 517.5px;    background-position: -267.72px -306.36px;"></div>
+               <div class="banque ethno-narr GraceDB-stage GraceDB GraceDB-parole GraceDB " style="    background-image: url('../Images/037.jpg');    width: 173.19px;    height: 119.37px;    background-size: 393.53000000000003px 517.5px;    background-position: -26.220000000000002px -26.91px;"></div>
+               <div class="banque ethno-narr GinetteD-stage GinetteD GraceDB-parole GraceDB " style="    background-image: url('../Images/037.jpg');    width: 163.99px;    height: 119.37px;    background-size: 393.53000000000003px 517.5px;    background-position: -199.41px -26.91px;"></div>
+               <div class="banque ethno-narr GraceDB-stage GraceDB GinetteD-stage GinetteD GraceDB-parole GraceDB GinetteD-parole GinetteD " style="    background-image: url('../Images/037.jpg');    width: 176.87px;    height: 117.30000000000001px;    background-size: 393.53000000000003px 517.5px;    background-position: -25.53px -149.5px;"></div>
+               <div class="banque ethno-narr GraceDB-stage GraceDB GraceDB-parole GraceDB GraceDB-parole GraceDB " style="    background-image: url('../Images/037.jpg');    width: 145.59px;    height: 114.77000000000001px;    background-size: 393.53000000000003px 517.5px;    background-position: -218.73000000000002px -149.5px;"></div>
+               <div class="banque ethno-narr GinetteD-stage GinetteD GraceDB-stage GraceDB SibylleG-stage SibylleG CamilleP-stage CamilleP GraceDB-parole GraceDB GraceDB-parole GraceDB " style="    background-image: url('../Images/037.jpg');    width: 340.17px;    height: -2.0700000000000003px;    background-size: 393.53000000000003px 517.5px;    background-position: -25.53px -266.34000000000003px;"></div>
+               <div class="banque ethno-narr GinetteD-stage GinetteD GraceDB-parole GraceDB GinetteD-parole GinetteD " style="    background-image: url('../Images/037.jpg');    width: 338.1px;    height: 110.4px;    background-size: 393.53000000000003px 517.5px;    background-position: -25.53px -371.22px;"></div>
+               <div class="banque ethno-narr GraceDB-stage GraceDB GinetteD-stage GinetteD GraceDB-parole GraceDB GinetteD-parole GinetteD " style="    background-image: url('../Images/038.jpg');    width: 180.09px;    height: 150.42000000000002px;    background-size: 393.53000000000003px 517.5px;    background-position: -26.91px -26.91px;"></div>
+               <div class="banque ethno-narr GraceDB-stage GraceDB GinetteD-stage GinetteD GinetteD-parole GinetteD GraceDB-parole GraceDB " style="    background-image: url('../Images/038.jpg');    width: 160.08px;    height: 160.77px;    background-size: 393.53000000000003px 517.5px;    background-position: -207px -29.67px;"></div>
+               <div class="banque ethno-narr GraceDB-stage GraceDB GinetteD-stage GinetteD GinetteD-parole GinetteD GraceDB-parole GraceDB " style="    background-image: url('../Images/038.jpg');    width: 149.04000000000002px;    height: 153.18px;    background-size: 393.53000000000003px 517.5px;    background-position: -26.91px -184.23000000000002px;"></div>
+               <div class="banque ethno-narr GinetteD-stage GinetteD GinetteD-parole GinetteD GinetteD-parole GinetteD " style="    background-image: url('../Images/038.jpg');    width: 191.13px;    height: 154.1px;    background-size: 393.53000000000003px 517.5px;    background-position: -175.95000000000002px -184.69px;"></div>
+               <div class="banque ethno-narr GraceDB-stage GraceDB GinetteD-stage GinetteD GraceDB-parole GraceDB GinetteD-parole GinetteD " style="    background-image: url('../Images/038.jpg');    width: 180.09px;    height: 145.59px;    background-size: 393.53000000000003px 517.5px;    background-position: -26.91px -334.65000000000003px;"></div>
+               <div class="banque ethno-narr GraceDB-stage GraceDB GraceDB-parole GraceDB GraceDB-parole GraceDB " style="    background-image: url('../Images/038.jpg');    width: 160.08px;    height: 149.04000000000002px;    background-size: 393.53000000000003px 517.5px;    background-position: -207px -331.2px;"></div>
+               <div class="banque ethno-narr GinetteD-stage GinetteD GraceDB-stage GraceDB GinetteD-parole GinetteD GraceDB-parole GraceDB " style="    background-image: url('../Images/039.jpg');    width: 193.20000000000002px;    height: 164.22px;    background-size: 393.53000000000003px 517.5px;    background-position: -26.91px -26.91px;"></div>
+               <div class="banque ethno-narr GraceDB-stage GraceDB GraceDB-parole GraceDB " style="    background-image: url('../Images/039.jpg');    width: 177.79000000000002px;    height: 151.11px;    background-size: 393.53000000000003px 517.5px;    background-position: -189.75px -28.98px;"></div>
+               <div class="banque ethno-narr GinetteD-stage GinetteD GinetteD-parole GinetteD GinetteD-parole GinetteD GinetteD-parole GinetteD " style="    background-image: url('../Images/039.jpg');    width: 173.19px;    height: 144.21px;    background-size: 393.53000000000003px 517.5px;    background-position: -26.91px -182.16px;"></div>
+               <div class="banque ethno-narr GinetteD-stage GinetteD GinetteD-parole GinetteD GinetteD-parole GinetteD " style="    background-image: url('../Images/039.jpg');    width: 189.52px;    height: 140.07px;    background-size: 393.53000000000003px 517.5px;    background-position: -178.02px -187.68px;"></div>
+               <div class="banque ethno-narr GraceDB-stage GraceDB GraceDB-parole GraceDB GraceDB-parole GraceDB " style="    background-image: url('../Images/039.jpg');    width: 157.32px;    height: 153.18px;    background-size: 393.53000000000003px 517.5px;    background-position: -26.91px -327.06px;"></div>
+               <div class="banque ethno-narr GraceDB-stage GraceDB GinetteD-stage GinetteD CelineB-stage CelineB CamilleP-stage CamilleP GinetteD-parole GinetteD GraceDB-parole GraceDB " style="    background-image: url('../Images/039.jpg');    width: 171.58px;    height: 154.56px;    background-size: 393.53000000000003px 517.5px;    background-position: -195.96px -326.37px;"></div>
+               <div class="banque ethno-narr GraceDB-stage GraceDB GinetteD-stage GinetteD GinetteD-parole GinetteD GraceDB-parole GraceDB " style="    background-image: url('../Images/040.jpg');    width: 127.65px;    height: 182.39000000000001px;    background-size: 393.53000000000003px 517.5px;    background-position: -26.91px -26.91px;"></div>
+               <div class="banque ethno-narr GraceDB-stage GraceDB GinetteD-stage GinetteD GinetteD-parole GinetteD GraceDB-parole GraceDB " style="    background-image: url('../Images/040.jpg');    width: 117.30000000000001px;    height: 182.39000000000001px;    background-size: 393.53000000000003px 517.5px;    background-position: -135.24px -26.91px;"></div>
+               <div class="banque ethno-narr GraceDB-stage GraceDB GinetteD-stage GinetteD GinetteD-parole GinetteD GraceDB-parole GraceDB GraceDB-parole GraceDB " style="    background-image: url('../Images/040.jpg');    width: 110.4px;    height: 182.39000000000001px;    background-size: 393.53000000000003px 517.5px;    background-position: -252.54000000000002px -26.91px;"></div>
+               <div class="banque ethno-narr GinetteD-stage GinetteD GinetteD-parole GinetteD " style="    background-image: url('../Images/040.jpg');    width: 152.49px;    height: 140.76000000000002px;    background-size: 393.53000000000003px 517.5px;    background-position: -26.91px -202.86px;"></div>
+               <div class="banque ethno-narr GinetteD-stage GinetteD GinetteD-parole GinetteD " style="    background-image: url('../Images/040.jpg');    width: 183.54000000000002px;    height: 151.11px;    background-size: 393.53000000000003px 517.5px;    background-position: -179.4px -202.86px;"></div>
+               <div class="banque ethno-narr GraceDB-stage GraceDB GinetteD-stage GinetteD GraceDB-parole GraceDB GraceDB-parole GraceDB " style="    background-image: url('../Images/040.jpg');    width: 336.03000000000003px;    height: 134.55px;    background-size: 393.53000000000003px 517.5px;    background-position: -26.91px -345px;"></div>
+               <div class="banque ethno-narr NathalieM-stage NathalieM MichèleA-stage MichèleA SibylleG-stage SibylleG CelineB-stage CelineB SibylleG-parole SibylleG NathalieM-parole NathalieM " style="    background-image: url('../Images/048.jpg');    width: 333.5px;    height: 150.19px;    background-size: 393.53000000000003px 517.5px;    background-position: -32.2px -31.51px;"></div>
+               <div class="banque ethno-narr NathalieM-stage NathalieM NathalieM-parole NathalieM " style="    background-image: url('../Images/048.jpg');    width: 158.70000000000002px;    height: 153.41px;    background-size: 393.53000000000003px 517.5px;    background-position: -31.05px -179.4px;"></div>
+               <div class="banque ethno-narr MichèleA-stage MichèleA MichèleA-parole MichèleA " style="    background-image: url('../Images/048.jpg');    width: 174.8px;    height: 167.9px;    background-size: 393.53000000000003px 517.5px;    background-position: -188.6px -181.70000000000002px;"></div>
+               <div class="banque ethno-narr MichèleA-stage MichèleA MichèleA-parole MichèleA " style="    background-image: url('../Images/048.jpg');    width: 134.32px;    height: 150.88px;    background-size: 393.53000000000003px 517.5px;    background-position: -29.44px -328.21000000000004px;"></div>
+               <div class="banque ethno-narr NathalieM-stage NathalieM NathalieM-parole NathalieM NathalieM-parole NathalieM " style="    background-image: url('../Images/048.jpg');    width: 193.20000000000002px;    height: 133.4px;    background-size: 393.53000000000003px 517.5px;    background-position: -170.20000000000002px -345px;"></div>
+               <div class="banque ethno-narr MichèleA-stage MichèleA NathalieM-stage NathalieM MichèleA-parole MichèleA NathalieM-parole NathalieM " style="    background-image: url('../Images/049.jpg');    width: 158.70000000000002px;    height: 147.20000000000002px;    background-size: 393.53000000000003px 517.5px;    background-position: -32.2px -32.2px;"></div>
+               <div class="banque ethno-narr NathalieM-stage NathalieM NathalieM-parole NathalieM NathalieM-parole NathalieM " style="    background-image: url('../Images/049.jpg');    width: 186.3px;    height: 150.65px;    background-size: 393.53000000000003px 517.5px;    background-position: -177.1px -31.05px;"></div>
+               <div class="banque ethno-narr MichèleA-stage MichèleA NathalieM-stage NathalieM MichèleA-parole MichèleA NathalieM-parole NathalieM " style="    background-image: url('../Images/049.jpg');    width: 174.8px;    height: 157.09px;    background-size: 393.53000000000003px 517.5px;    background-position: -32.2px -178.71px;"></div>
+               <div class="banque ethno-narr MichèleA-stage MichèleA MichèleA-parole MichèleA " style="    background-image: url('../Images/049.jpg');    width: 146.05px;    height: 150.88px;    background-size: 393.53000000000003px 517.5px;    background-position: -216.20000000000002px -181.70000000000002px;"></div>
+               <div class="banque ethno-narr MichèleA-stage MichèleA NathalieM-stage NathalieM MichèleA-parole MichèleA NathalieM-parole NathalieM " style="    background-image: url('../Images/049.jpg');    width: 164.45000000000002px;    height: 144.21px;    background-size: 393.53000000000003px 517.5px;    background-position: -31.05px -335.34000000000003px;"></div>
+               <div class="banque ethno-narr NathalieM-stage NathalieM NathalieM-parole NathalieM NathalieM-parole NathalieM " style="    background-image: url('../Images/049.jpg');    width: 168.36px;    height: 146.28px;    background-size: 393.53000000000003px 517.5px;    background-position: -193.89000000000001px -333.27000000000004px;"></div>
+               <div class="banque ethno-narr MichèleA-stage MichèleA NathalieM-stage NathalieM SibylleG-stage SibylleG CelineB-stage CelineB MichèleA-parole MichèleA NathalieM-parole NathalieM " style="    background-image: url('../Images/050.jpg');    width: 152.95000000000002px;    height: 150.42000000000002px;    background-size: 393.53000000000003px 517.5px;    background-position: -31.05px -30.360000000000003px;"></div>
+               <div class="banque ethno-narr MichèleA-stage MichèleA MichèleA-parole MichèleA MichèleA-parole MichèleA " style="    background-image: url('../Images/050.jpg');    width: 162.61px;    height: 149.5px;    background-size: 393.53000000000003px 517.5px;    background-position: -200.79000000000002px -30.360000000000003px;"></div>
+               <div class="banque ethno-narr NathalieM-stage NathalieM NathalieM-parole NathalieM NathalieM-parole NathalieM " style="    background-image: url('../Images/050.jpg');    width: 162.84px;    height: 150.88px;    background-size: 393.53000000000003px 517.5px;    background-position: -30.360000000000003px -181.70000000000002px;"></div>
+               <div class="banque ethno-narr MichèleA-stage MichèleA NathalieM-stage NathalieM MichèleA-parole MichèleA NathalieM-parole NathalieM NathalieM-parole NathalieM " style="    background-image: url('../Images/050.jpg');    width: 166.75px;    height: 149.5px;    background-size: 393.53000000000003px 517.5px;    background-position: -197.8px -181.70000000000002px;"></div>
+               <div class="banque ethno-narr MichèleA-stage MichèleA MichèleA-parole MichèleA MichèleA-parole MichèleA " style="    background-image: url('../Images/050.jpg');    width: 165.14000000000001px;    height: 144.67000000000002px;    background-size: 393.53000000000003px 517.5px;    background-position: -32.2px -333.5px;"></div>
+               <div class="banque ethno-narr NathalieM-stage NathalieM NathalieM-parole NathalieM " style="    background-image: url('../Images/050.jpg');    width: 164.22px;    height: 146.97px;    background-size: 393.53000000000003px 517.5px;    background-position: -198.03px -331.89px;"></div>
+               <div class="banque ethno-narr MichèleA-stage MichèleA MichèleA-parole MichèleA MichèleA-parole MichèleA " style="    background-image: url('../Images/051.jpg');    width: 123.51px;    height: 169.74px;    background-size: 393.53000000000003px 517.5px;    background-position: -30.360000000000003px -28.98px;"></div>
+               <div class="banque ethno-narr MichèleA-stage MichèleA MichèleA-parole MichèleA " style="    background-image: url('../Images/051.jpg');    width: 110.63000000000001px;    height: 165.37px;    background-size: 393.53000000000003px 517.5px;    background-position: -146.97px -32.43px;"></div>
+               <div class="banque ethno-narr NathalieM-stage NathalieM MichèleA-parole MichèleA MichèleA-parole MichèleA " style="    background-image: url('../Images/051.jpg');    width: 321.54px;    height: 159.62px;    background-size: 393.53000000000003px 517.5px;    background-position: -42.78px -32.2px;"></div>
+               <div class="banque ethno-narr MichèleA-stage MichèleA NathalieM-stage NathalieM NathalieM-parole NathalieM " style="    background-image: url('../Images/051.jpg');    width: 170.20000000000002px;    height: 131.79px;    background-size: 393.53000000000003px 517.5px;    background-position: -29.900000000000002px -197.34px;"></div>
+               <div class="banque ethno-narr MichèleA-stage MichèleA NathalieM-stage NathalieM MichèleA-parole MichèleA " style="    background-image: url('../Images/051.jpg');    width: 156.4px;    height: 126.5px;    background-size: 393.53000000000003px 517.5px;    background-position: -207px -195.5px;"></div>
+               <div class="banque ethno-narr MichèleA-stage MichèleA NathalieM-stage NathalieM SibylleG-stage SibylleG CelineB-stage CelineB MichèleA-parole MichèleA NathalieM-parole NathalieM " style="    background-image: url('../Images/051.jpg');    width: 330.51px;    height: 144.9px;    background-size: 393.53000000000003px 517.5px;    background-position: -31.740000000000002px -333.96000000000004px;"></div>
+               <div class="banque ethno-narr MichèleA-stage MichèleA SibylleG-stage SibylleG CelineB-stage CelineB MichèleA-parole MichèleA " style="    background-image: url('../Images/052.jpg');    width: 204.24px;    height: 152.95000000000002px;    background-size: 393.53000000000003px 517.5px;    background-position: -31.05px -31.05px;"></div>
+               <div class="banque ethno-narr MichèleA-stage MichèleA MichèleA-parole MichèleA " style="    background-image: url('../Images/052.jpg');    width: 140.3px;    height: 140.76000000000002px;    background-size: 393.53000000000003px 517.5px;    background-position: -223.10000000000002px -33.120000000000005px;"></div>
+               <div class="banque ethno-narr MichèleA-stage MichèleA SibylleG-stage SibylleG CelineB-stage CelineB MichèleA-parole MichèleA " style="    background-image: url('../Images/052.jpg');    width: 163.3px;    height: 141.45000000000002px;    background-size: 393.53000000000003px 517.5px;    background-position: -31.05px -175.26000000000002px;"></div>
+               <div class="banque ethno-narr MichèleA-stage MichèleA SibylleG-stage SibylleG CelineB-stage CelineB MichèleA-parole MichèleA " style="    background-image: url('../Images/052.jpg');    width: 143.52px;    height: 139.38px;    background-size: 393.53000000000003px 517.5px;    background-position: -222.18px -176.64000000000001px;"></div>
+               <div class="banque edit-narr JeanneP-stage JeanneP SibylleG-stage SibylleG CelineB-stage CelineB CelineB-parole CelineB JeanneP-parole JeanneP " style="    background-image: url('../Images/052.jpg');    width: 170.43px;    height: 160.77px;    background-size: 393.53000000000003px 517.5px;    background-position: -35.190000000000005px -315.33000000000004px;"></div>
+               <div class="banque edit-narr JeanneP-stage JeanneP SibylleG-stage SibylleG SibylleG-parole SibylleG SibylleG-parole SibylleG JeanneP-parole JeanneP " style="    background-image: url('../Images/052.jpg');    width: 155.94px;    height: 161px;    background-size: 393.53000000000003px 517.5px;    background-position: -204.24px -315.1px;"></div>
+               <div class="banque ethno-narr SibylleG-stage SibylleG PierreD-stage PierreD SibylleG-parole SibylleG PierreD-parole PierreD " style="    background-image: url('../Images/057.jpg');    width: 332.35px;    height: 150.65px;    background-size: 393.53000000000003px 517.5px;    background-position: -31.05px -31.05px;"></div>
+               <div class="banque ethno-narr SibylleG-stage SibylleG SibylleG-parole SibylleG " style="    background-image: url('../Images/057.jpg');    width: 164.91px;    height: 151.11px;    background-size: 393.53000000000003px 517.5px;    background-position: -31.740000000000002px -178.71px;"></div>
+               <div class="banque ethno-narr PierreD-stage PierreD PierreD-parole PierreD " style="    background-image: url('../Images/057.jpg');    width: 166.06px;    height: 152.03px;    background-size: 393.53000000000003px 517.5px;    background-position: -197.34px -181.47px;"></div>
+               <div class="banque ethno-narr PierreD-stage PierreD PierreD-parole PierreD " style="    background-image: url('../Images/057.jpg');    width: 164.91px;    height: 150.42000000000002px;    background-size: 393.53000000000003px 517.5px;    background-position: -34.5px -325.68px;"></div>
+               <div class="banque ethno-narr SibylleG-stage SibylleG SibylleG-parole SibylleG " style="    background-image: url('../Images/057.jpg');    width: 162.15px;    height: 143.98000000000002px;    background-size: 393.53000000000003px 517.5px;    background-position: -201.48000000000002px -333.27000000000004px;"></div>
+               <div class="banque edit-narr SibylleG-stage SibylleG SibylleG-parole SibylleG " style="    background-image: url('../Images/058.jpg');    width: 110.63000000000001px;    height: 156.4px;    background-size: 393.53000000000003px 517.5px;    background-position: -32.2px -32.2px;"></div>
+               <div class="banque edit-narr CelineB-stage CelineB SibylleG-stage SibylleG CelineB-parole CelineB " style="    background-image: url('../Images/058.jpg');    width: 108.56px;    height: 154.56px;    background-size: 393.53000000000003px 517.5px;    background-position: -142.14000000000001px -33.81px;"></div>
+               <div class="banque edit-narr CelineB-stage CelineB SibylleG-stage SibylleG JeanneP-stage JeanneP CelineB-parole CelineB JeanneP-parole JeanneP " style="    background-image: url('../Images/058.jpg');    width: 110.4px;    height: 155.71px;    background-size: 393.53000000000003px 517.5px;    background-position: -253px -35.190000000000005px;"></div>
+               <div class="banque ethno-narr PierreD-stage PierreD SibylleG-stage SibylleG PierreD-parole PierreD PierreD-parole PierreD " style="    background-image: url('../Images/058.jpg');    width: 325.45px;    height: 174.8px;    background-size: 393.53000000000003px 517.5px;    background-position: -36.800000000000004px -188.6px;"></div>
+               <div class="banque edit-narr CelineB-stage CelineB CelineB-parole CelineB " style="    background-image: url('../Images/058.jpg');    width: 186.3px;    height: 112.7px;    background-size: 393.53000000000003px 517.5px;    background-position: -32.2px -365.7px;"></div>
+               <div class="banque edit-narr CelineB-stage CelineB CelineB-parole CelineB " style="    background-image: url('../Images/058.jpg');    width: 138px;    height: 112.7px;    background-size: 393.53000000000003px 517.5px;    background-position: -225.4px -365.7px;"></div>
+               <div class="banque edit-narr CelineB-stage CelineB CelineB-parole CelineB " style="    background-image: url('../Images/059.jpg');    width: 181.70000000000002px;    height: 96.60000000000001px;    background-size: 393.53000000000003px 517.5px;    background-position: -32.2px -32.2px;"></div>
+               <div class="banque edit-narr SibylleG-stage SibylleG SibylleG-parole SibylleG " style="    background-image: url('../Images/059.jpg');    width: 177.1px;    height: 94.3px;    background-size: 393.53000000000003px 517.5px;    background-position: -184px -29.900000000000002px;"></div>
+               <div class="banque ethno-narr PierreD-stage PierreD SibylleG-stage SibylleG SibylleG-parole SibylleG SibylleG-parole SibylleG " style="    background-image: url('../Images/059.jpg');    width: 174.8px;    height: 218.5px;    background-size: 393.53000000000003px 517.5px;    background-position: -32.2px -124.2px;"></div>
+               <div class="banque ethno-narr PierreD-stage PierreD PierreD-parole PierreD " style="    background-image: url('../Images/059.jpg');    width: 156.4px;    height: 197.8px;    background-size: 393.53000000000003px 517.5px;    background-position: -207px -144.9px;"></div>
+               <div class="banque felin-narr chat-long-blanc-stage chat-long-blanc chat-long-blanc-parole chat-long-blanc " style="    background-image: url('../Images/059.jpg');    width: 162.38px;    height: 133.4px;    background-size: 393.53000000000003px 517.5px;    background-position: -33.120000000000005px -342.7px;"></div>
+               <div class="banque felin-narr chat-long-blanc-stage chat-long-blanc chat-long-blanc-parole chat-long-blanc " style="    background-image: url('../Images/059.jpg');    width: 152.95000000000002px;    height: 136.85px;    background-size: 393.53000000000003px 517.5px;    background-position: -207px -340.40000000000003px;"></div>
+               <div class="banque ethno-narr RaymondD-stage RaymondD HuguetteD-stage HuguetteD MichelineD-stage MichelineD YvonneD-stage YvonneD Jean-PierreD-stage Jean-PierreD FrançoisD-stage FrançoisD RolandD-stage RolandD ClaudineD-stage ClaudineD ColetteD-stage ColetteD DominiqueD-stage DominiqueD AntoineD-stage AntoineD chat-tigre-parole chat-tigre " style="    background-image: url('../Images/066.jpg');    width: 326.6px;    height: 138.92000000000002px;    background-size: 393.53000000000003px 517.5px;    background-position: -32.2px -32.2px;"></div>
+               <div class="banque ethno-narr Personne-stage Personne chat-tigre-parole chat-tigre " style="    background-image: url('../Images/066.jpg');    width: 192.05px;    height: 149.5px;    background-size: 393.53000000000003px 517.5px;    background-position: -31.05px -184px;"></div>
+               <div class="banque felin-narr chat-blanc-noir-stage chat-blanc-noir chat-tigre-stage chat-tigre chat-blanc-noir-parole chat-blanc-noir chat-tigre-parole chat-tigre chat-tigre-parole chat-tigre " style="    background-image: url('../Images/066.jpg');    width: 161px;    height: 163.3px;    background-size: 393.53000000000003px 517.5px;    background-position: -202.4px -181.70000000000002px;"></div>
+               <div class="banque ethno-narr RaymondD-stage RaymondD Jean-PierreD-stage Jean-PierreD chat-tigre-parole chat-tigre RaymondD-parole RaymondD Jean-PierreD-parole Jean-PierreD " style="    background-image: url('../Images/066.jpg');    width: 232.3px;    height: 147.20000000000002px;    background-size: 393.53000000000003px 517.5px;    background-position: -34.5px -331.2px;"></div>
+               <div class="banque felin-narr chat-blanc-stage chat-blanc chat-blanc-noir-stage chat-blanc-noir chat-tigre-stage chat-tigre chat-blanc chat-blanc-noir-parole chat-blanc chat-blanc-noir " style="    background-image: url('../Images/066.jpg');    width: 89.7px;    height: 125.12px;    background-size: 393.53000000000003px 517.5px;    background-position: -269.1px -353.28000000000003px;"></div>
+               <div class="banque ethno-narr Jean-PierreD-stage Jean-PierreD chat-tigre-parole chat-tigre " style="    background-image: url('../Images/067.jpg');    width: 169.05px;    height: 147.20000000000002px;    background-size: 393.53000000000003px 517.5px;    background-position: -31.05px -32.2px;"></div>
+               <div class="banque ethno-narr Personne-stage Personne chat-tigre-parole chat-tigre " style="    background-image: url('../Images/067.jpg');    width: -165.6px;    height: 140.3px;    background-size: 393.53000000000003px 517.5px;    background-position: -200.10000000000002px -32.2px;"></div>
+               <div class="banque felin-narr chat-tigre-stage chat-tigre chat-blanc-stage chat-blanc chat-tigre-parole chat-tigre chat-blanc-parole chat-blanc " style="    background-image: url('../Images/067.jpg');    width: 166.75px;    height: 143.75px;    background-size: 393.53000000000003px 517.5px;    background-position: -31.05px -182.85px;"></div>
+               <div class="banque ethno-narr Jean-PierreD-stage Jean-PierreD LucD-stage LucD chat-tigre-parole chat-tigre " style="    background-image: url('../Images/067.jpg');    width: 164.45000000000002px;    height: 142.6px;    background-size: 393.53000000000003px 517.5px;    background-position: -197.8px -179.4px;"></div>
+               <div class="banque ethno-narr RaymondD-stage RaymondD Jean-PierreD-stage Jean-PierreD chat-tigre-parole chat-tigre " style="    background-image: url('../Images/067.jpg');    width: 163.3px;    height: 140.3px;    background-size: 393.53000000000003px 517.5px;    background-position: -32.2px -333.5px;"></div>
+               <div class="banque ethno-narr RaymondD-stage RaymondD LucD-stage LucD chat-blanc-noir-stage chat-blanc-noir chat-tigre-parole chat-tigre LucD-parole LucD chat-blanc-noir-parole chat-blanc-noir " style="    background-image: url('../Images/067.jpg');    width: 167.9px;    height: -16.1px;    background-size: 393.53000000000003px 517.5px;    background-position: -197.8px -333.5px;"></div>
+               <div class="banque ethno-narr AntoineD-stage AntoineD chat-tigre-parole chat-tigre " style="    background-image: url('../Images/068.jpg');    width: 326.6px;    height: 140.3px;    background-size: 393.53000000000003px 517.5px;    background-position: -32.2px -32.2px;"></div>
+               <div class="banque felin-narr chat-long-blanc-stage chat-long-blanc chat-long-blanc-parole chat-long-blanc chat-long-blanc-parole chat-long-blanc chat-long-blanc-parole chat-long-blanc chat-long-blanc-parole chat-long-blanc " style="    background-image: url('../Images/068.jpg');    width: 333.5px;    height: 138px;    background-size: 393.53000000000003px 517.5px;    background-position: -29.900000000000002px -181.70000000000002px;"></div>
+               <div class="banque ethno-narr AntoineD-stage AntoineD RaymondD-stage RaymondD Jean-PierreD-stage Jean-PierreD FrançoisD-stage FrançoisD RolandD-stage RolandD ClaudineD-stage ClaudineD ColetteD-stage ColetteD DominiqueD-stage DominiqueD chat-tigre-parole chat-tigre " style="    background-image: url('../Images/068.jpg');    width: 331.2px;    height: 139.15px;    background-size: 393.53000000000003px 517.5px;    background-position: -32.2px -333.5px;"></div>
+               <div class="banque ethno-narr Personne-stage Personne chat-tigre-parole chat-tigre " style="    background-image: url('../Images/069.jpg');    width: 128.8px;    height: 174.8px;    background-size: 393.53000000000003px 517.5px;    background-position: -32.2px -32.2px;"></div>
+               <div class="banque ethno-narr AntoineD-stage AntoineD Jean-PierreD-stage Jean-PierreD FrançoisD-stage FrançoisD RolandD-stage RolandD ClaudineD-stage ClaudineD ColetteD-stage ColetteD DominiqueD-stage DominiqueD chat-tigre-parole chat-tigre chat-tigre-parole chat-tigre " style="    background-image: url('../Images/069.jpg');    width: 202.4px;    height: 174.8px;    background-size: 393.53000000000003px 517.5px;    background-position: -161px -32.2px;"></div>
+               <div class="banque felin-narr chat-tigre-stage chat-tigre chat-blanc-stage chat-blanc chat-blanc-noir-stage chat-blanc-noir chat-long-blanc-stage chat-long-blanc chat-long-noir-stage chat-long-noir chat-blanc-noir-parole chat-blanc-noir chat-long-blanc-parole chat-long-blanc " style="    background-image: url('../Images/069.jpg');    width: 326.6px;    height: 126.5px;    background-size: 393.53000000000003px 517.5px;    background-position: -34.5px -207px;"></div>
+               <div class="banque felin-narr chat-blanc-noir-stage chat-blanc-noir chat-blanc-noir-parole chat-blanc-noir " style="    background-image: url('../Images/069.jpg');    width: 126.5px;    height: 144.9px;    background-size: 393.53000000000003px 517.5px;    background-position: -32.2px -331.2px;"></div>
+               <div class="banque felin-narr chat-tigre-stage chat-tigre chat-blanc-stage chat-blanc chat-blanc-noir-stage chat-blanc-noir chat-long-blanc-stage chat-long-blanc chat-long-noir-stage chat-long-noir chat-blanc-noir chat-blanc-parole chat-blanc-noir chat-blanc " style="    background-image: url('../Images/069.jpg');    width: 203.55px;    height: 147.20000000000002px;    background-size: 393.53000000000003px 517.5px;    background-position: -158.70000000000002px -331.2px;"></div>
+               <div class="banque felin-narr ethno-narr chat-tigre-stage chat-tigre AntoineD-stage AntoineD chat-tigre-parole chat-tigre chat-tigre-parole chat-tigre " style="    background-image: url('../Images/070.jpg');    width: 331.2px;    height: 142.6px;    background-size: 393.53000000000003px 517.5px;    background-position: -29.900000000000002px -29.900000000000002px;"></div>
+               <div class="banque felin-narr chat-blanc-stage chat-blanc chat-blanc-parole chat-blanc chat-blanc-parole chat-blanc " style="    background-image: url('../Images/070.jpg');    width: 165.6px;    height: 131.1px;    background-size: 393.53000000000003px 517.5px;    background-position: -32.2px -177.1px;"></div>
+               <div class="banque felin-narr chat-tigre-stage chat-tigre chat-blanc-stage chat-blanc chat-blanc-noir-stage chat-blanc-noir chat-long-blanc-stage chat-long-blanc chat-long-noir-stage chat-long-noir chat-tigre-parole chat-tigre chat-blanc chat-blanc-noir chat-long-blanc chat-long-noir-parole chat-blanc chat-blanc-noir chat-long-blanc chat-long-noir chat-blanc chat-blanc-noir chat-long-blanc chat-long-noir-parole chat-blanc chat-blanc-noir chat-long-blanc chat-long-noir " style="    background-image: url('../Images/070.jpg');    width: 164.45000000000002px;    height: 131.1px;    background-size: 393.53000000000003px 517.5px;    background-position: -197.8px -177.1px;"></div>
+               <div class="banque felin-narr ethno-narr chat-tigre-stage chat-tigre chat-blanc-noir-stage chat-blanc-noir chat-tigre-parole chat-tigre chat-tigre-parole chat-tigre chat-blanc-noir-parole chat-blanc-noir " style="    background-image: url('../Images/070.jpg');    width: 328.90000000000003px;    height: 165.6px;    background-size: 393.53000000000003px 517.5px;    background-position: -32.2px -310.5px;"></div>
+               <div class="banque felin-narr ethno-narr chat-tigre-stage chat-tigre chat-tigre-parole chat-tigre chat-tigre-parole chat-tigre " style="    background-image: url('../Images/071.jpg');    width: 274.85px;    height: 71.99000000000001px;    background-size: 393.53000000000003px 517.5px;    background-position: -32.2px -32.2px;"></div>
+               <div class="banque felin-narr ethno-narr chat-blanc-stage chat-blanc chat-blanc-parole chat-blanc " style="    background-image: url('../Images/071.jpg');    width: 56.35px;    height: 98.21000000000001px;    background-size: 393.53000000000003px 517.5px;    background-position: -307.05px -104.19px;"></div>
+               <div class="banque felin-narr ethno-narr chat-tigre-stage chat-tigre chat-tigre-parole chat-tigre " style="    background-image: url('../Images/071.jpg');    width: 115px;    height: 161px;    background-size: 393.53000000000003px 517.5px;    background-position: -29.900000000000002px -184px;"></div>
+               <div class="banque felin-narr ethno-narr chat-blanc-stage chat-blanc chat-blanc chat-blanc-noir-parole chat-blanc chat-blanc-noir " style="    background-image: url('../Images/071.jpg');    width: 74.75px;    height: 92px;    background-size: 393.53000000000003px 517.5px;    background-position: -287.5px -253px;"></div>
+               <div class="banque ethno-narr AntoineD-stage AntoineD vide-parole vide " style="    background-image: url('../Images/071.jpg');    width: 332.35px;    height: 315.1px;    background-size: 393.53000000000003px 517.5px;    background-position: -29.900000000000002px -29.900000000000002px;"></div>
+               <div class="banque felin-narr chat-long-blanc-stage chat-long-blanc chat-long-noir-stage chat-long-noir chat-tigre-stage chat-tigre chat-blanc-stage chat-blanc chat-blanc-noir-stage chat-blanc-noir chat-tigre-parole chat-tigre chat-long-noir-parole chat-long-noir " style="    background-image: url('../Images/071.jpg');    width: 330.05px;    height: 127.88000000000001px;    background-size: 393.53000000000003px 517.5px;    background-position: -32.2px -350.52000000000004px;"></div>
+               <div class="banque ethno-narr JeanB-stage JeanB AvocatMBrahimi-stage AvocatMBrahimi AbdelkrimB-stage AbdelkrimB Greffiere-stage Greffiere Enquetrice-stage Enquetrice chat-tigre-parole chat-tigre JeanB-parole JeanB " style="    background-image: url('../Images/078.jpg');    width: 330.05px;    height: 138px;    background-size: 393.53000000000003px 517.5px;    background-position: -32.2px -32.2px;"></div>
+               <div class="banque ethno-narr JeanB-stage JeanB JeanB-parole JeanB " style="    background-image: url('../Images/078.jpg');    width: 108.10000000000001px;    height: 184px;    background-size: 393.53000000000003px 517.5px;    background-position: -29.900000000000002px -170.20000000000002px;"></div>
+               <div class="banque ethno-narr JeanB-stage JeanB AvocatMBrahimi-stage AvocatMBrahimi AbdelkrimB-stage AbdelkrimB JeanB-parole JeanB AvocatMBrahimi-parole AvocatMBrahimi " style="    background-image: url('../Images/078.jpg');    width: 131.1px;    height: 184px;    background-size: 393.53000000000003px 517.5px;    background-position: -138px -170.20000000000002px;"></div>
+               <div class="banque ethno-narr AbdelkrimB-stage AbdelkrimB AbdelkrimB-parole AbdelkrimB AbdelkrimB-parole AbdelkrimB " style="    background-image: url('../Images/078.jpg');    width: 93.15px;    height: 184px;    background-size: 393.53000000000003px 517.5px;    background-position: -269.1px -170.20000000000002px;"></div>
+               <div class="banque ethno-narr JeanB-stage JeanB AvocatMBrahimi-stage AvocatMBrahimi AbdelkrimB-stage AbdelkrimB JeanB-parole JeanB AvocatMBrahimi-parole AvocatMBrahimi " style="    background-image: url('../Images/078.jpg');    width: 332.35px;    height: 128.8px;    background-size: 393.53000000000003px 517.5px;    background-position: -29.900000000000002px -351.90000000000003px;"></div>
+               <div class="banque ethno-narr JeanB-stage JeanB JeanB-parole JeanB " style="    background-image: url('../Images/079.jpg');    width: 124.2px;    height: 147.20000000000002px;    background-size: 393.53000000000003px 517.5px;    background-position: -32.2px -32.2px;"></div>
+               <div class="banque ethno-narr JeanB-stage JeanB Enquetrice-stage Enquetrice Greffiere-stage Greffiere AvocatMBrahimi-stage AvocatMBrahimi AbdelkrimB-stage AbdelkrimB JeanB-parole JeanB " style="    background-image: url('../Images/079.jpg');    width: 205.85000000000002px;    height: 142.6px;    background-size: 393.53000000000003px 517.5px;    background-position: -156.4px -32.2px;"></div>
+               <div class="banque ethno-narr AvocateMmeBrahimi-stage AvocateMmeBrahimi Enquetrice-stage Enquetrice JeanB-stage JeanB chat-tigre-parole chat-tigre AvocateMmeBrahimi-parole AvocateMmeBrahimi AvocateMmeBrahimi-parole AvocateMmeBrahimi " style="    background-image: url('../Images/079.jpg');    width: 330.05px;    height: 132.25px;    background-size: 393.53000000000003px 517.5px;    background-position: -32.2px -181.70000000000002px;"></div>
+               <div class="banque ethno-narr AvocateMmeBrahimi-stage AvocateMmeBrahimi AvocateMmeBrahimi-parole AvocateMmeBrahimi " style="    background-image: url('../Images/079.jpg');    width: 181.70000000000002px;    height: 116.15px;    background-size: 393.53000000000003px 517.5px;    background-position: -32.2px -362.25px;"></div>
+               <div class="banque ethno-narr AvocateMmeBrahimi-stage AvocateMmeBrahimi AvocateMmeBrahimi-parole AvocateMmeBrahimi " style="    background-image: url('../Images/079.jpg');    width: 189.75px;    height: 161px;    background-size: 393.53000000000003px 517.5px;    background-position: -172.5px -317.40000000000003px;"></div>
+               <div class="banque ethno-narr JeanB-stage JeanB JeanB-parole JeanB " style="    background-image: url('../Images/048.jpg');    width: 164.45000000000002px;    height: 149.5px;    background-size: 393.53000000000003px 517.5px;    background-position: -32.2px -32.2px;"></div>
+               <div class="banque ethno-narr AvocateMmeBrahimi-stage AvocateMmeBrahimi JeanB-stage JeanB JeanB-parole JeanB AvocateMmeBrahimi-parole AvocateMmeBrahimi " style="    background-image: url('../Images/048.jpg');    width: 163.3px;    height: 161px;    background-size: 393.53000000000003px 517.5px;    background-position: -200.10000000000002px -32.2px;"></div>
+               <div class="banque ethno-narr AvocateMmeBrahimi-stage AvocateMmeBrahimi AvocateMmeBrahimi-parole AvocateMmeBrahimi " style="    background-image: url('../Images/048.jpg');    width: 170.20000000000002px;    height: 149.5px;    background-size: 393.53000000000003px 517.5px;    background-position: -29.900000000000002px -181.70000000000002px;"></div>
+               <div class="banque ethno-narr AvocateMmeBrahimi-stage AvocateMmeBrahimi AvocateMmeBrahimi-parole AvocateMmeBrahimi " style="    background-image: url('../Images/048.jpg');    width: 163.3px;    height: 149.5px;    background-size: 393.53000000000003px 517.5px;    background-position: -200.10000000000002px -181.70000000000002px;"></div>
+               <div class="banque ethno-narr AvocateMmeBrahimi-stage AvocateMmeBrahimi JeanB-stage JeanB Enquetrice-stage Enquetrice AvocateMmeBrahimi-parole AvocateMmeBrahimi " style="    background-image: url('../Images/048.jpg');    width: 165.6px;    height: 147.20000000000002px;    background-size: 393.53000000000003px 517.5px;    background-position: -29.900000000000002px -331.2px;"></div>
+               <div class="banque ethno-narr AvocateMmeBrahimi-stage AvocateMmeBrahimi AvocateMmeBrahimi-parole AvocateMmeBrahimi " style="    background-image: url('../Images/048.jpg');    width: 167.9px;    height: 147.20000000000002px;    background-size: 393.53000000000003px 517.5px;    background-position: -195.5px -331.2px;"></div>
+               <div class="banque ethno-narr FabienneC-stage FabienneC EricC-stage EricC CelineB-parole CelineB CelineB-parole CelineB " style="    background-image: url('../Images/084.jpg');    width: 333.5px;    height: 135.70000000000002px;    background-size: 393.53000000000003px 517.5px;    background-position: -32.2px -32.2px;"></div>
+               <div class="banque ethno-narr FabienneC-stage FabienneC CelineB-parole CelineB " style="    background-image: url('../Images/084.jpg');    width: 149.5px;    height: 167.9px;    background-size: 393.53000000000003px 517.5px;    background-position: -34.5px -167.9px;"></div>
+               <div class="banque ethno-narr FabienneC-stage FabienneC CelineB-parole CelineB " style="    background-image: url('../Images/084.jpg');    width: 178.25px;    height: 167.9px;    background-size: 393.53000000000003px 517.5px;    background-position: -184px -167.9px;"></div>
+               <div class="banque ethno-narr FabienneC-stage FabienneC CelineB-parole CelineB " style="    background-image: url('../Images/084.jpg');    width: 330.05px;    height: 142.6px;    background-size: 393.53000000000003px 517.5px;    background-position: -32.2px -335.8px;"></div>
+               <div class="banque ethno-narr Personne-stage Personne CelineB-parole CelineB " style="    background-image: url('../Images/085.jpg');    width: 151.8px;    height: 209.3px;    background-size: 393.53000000000003px 517.5px;    background-position: -32.2px -32.2px;"></div>
+               <div class="banque ethno-narr Personne-stage Personne CelineB-parole CelineB " style="    background-image: url('../Images/085.jpg');    width: 178.25px;    height: 209.3px;    background-size: 393.53000000000003px 517.5px;    background-position: -184px -32.2px;"></div>
+               <div class="banque ethno-narr CelineB-stage CelineB CelineB-parole CelineB CelineB-parole CelineB CelineB-parole CelineB " style="    background-image: url('../Images/085.jpg');    width: 330.05px;    height: -16.560000000000002px;    background-size: 393.53000000000003px 517.5px;    background-position: -32.2px -258.06px;"></div>
+               <div class="banque ethno-narr FabienneC-stage FabienneC EricC-stage EricC CelineB-parole CelineB " style="    background-image: url('../Images/086.jpg');    width: 158.70000000000002px;    height: 179.4px;    background-size: 393.53000000000003px 517.5px;    background-position: -32.2px -32.2px;"></div>
+               <div class="banque ethno-narr FabienneC-stage FabienneC CelineB-parole CelineB " style="    background-image: url('../Images/086.jpg');    width: 171.35px;    height: 179.4px;    background-size: 393.53000000000003px 517.5px;    background-position: -190.9px -32.2px;"></div>
+               <div class="banque edit-narr JeanneP-stage JeanneP SibylleG-stage SibylleG CelineB-stage CelineB JeanneP-parole JeanneP " style="    background-image: url('../Images/086.jpg');    width: 330.05px;    height: 129.95000000000002px;    background-size: 393.53000000000003px 517.5px;    background-position: -32.2px -211.60000000000002px;"></div>
+               <div class="banque edit-narr CelineB-stage CelineB CelineB-parole CelineB " style="    background-image: url('../Images/086.jpg');    width: 138px;    height: 136.85px;    background-size: 393.53000000000003px 517.5px;    background-position: -32.2px -341.55px;"></div>
+               <div class="banque felin-narr SibylleG-stage SibylleG CelineB-stage CelineB CelineB-parole CelineB SibylleG-parole SibylleG " style="    background-image: url('../Images/086.jpg');    width: 192.05px;    height: 136.85px;    background-size: 393.53000000000003px 517.5px;    background-position: -170.20000000000002px -341.55px;"></div>
+               <div class="banque ethno-narr BlandineL-stage BlandineL JacquesL-stage JacquesL chat-tigre-parole chat-tigre " style="    background-image: url('../Images/090.jpg');    width: 165.6px;    height: 147.20000000000002px;    background-size: 393.53000000000003px 517.5px;    background-position: -29.900000000000002px -29.900000000000002px;"></div>
+               <div class="banque ethno-narr Personne-stage Personne chat-tigre-parole chat-tigre " style="    background-image: url('../Images/090.jpg');    width: 166.75px;    height: 149.5px;    background-size: 393.53000000000003px 517.5px;    background-position: -195.5px -29.900000000000002px;"></div>
+               <div class="banque ethno-narr BlandineL-stage BlandineL JacquesL-stage JacquesL chat-tigre-parole chat-tigre " style="    background-image: url('../Images/090.jpg');    width: 170.20000000000002px;    height: 151.8px;    background-size: 393.53000000000003px 517.5px;    background-position: -29.900000000000002px -179.4px;"></div>
+               <div class="banque ethno-narr Personne-stage Personne chat-tigre-parole chat-tigre " style="    background-image: url('../Images/090.jpg');    width: 162.15px;    height: 151.8px;    background-size: 393.53000000000003px 517.5px;    background-position: -200.10000000000002px -179.4px;"></div>
+               <div class="banque ethno-narr juge-stage juge chat-tigre-parole chat-tigre " style="    background-image: url('../Images/090.jpg');    width: 158.70000000000002px;    height: 147.20000000000002px;    background-size: 393.53000000000003px 517.5px;    background-position: -29.900000000000002px -331.2px;"></div>
+               <div class="banque ethno-narr BlandineL-stage BlandineL chat-tigre-parole chat-tigre " style="    background-image: url('../Images/090.jpg');    width: 162.15px;    height: 147.20000000000002px;    background-size: 393.53000000000003px 517.5px;    background-position: -200.10000000000002px -331.2px;"></div>
+               <div class="banque ethno-narr BlandineL-stage BlandineL AvocateBlandineL-stage AvocateBlandineL AvocatJacquesL-stage AvocatJacquesL JacquesL-stage JacquesL ConseillereCA-stage ConseillereCA chat-tigre-parole chat-tigre AvocateBlandineL-parole AvocateBlandineL AvocateBlandineL-parole AvocateBlandineL " style="    background-image: url('../Images/091.jpg');    width: 332.35px;    height: 181.70000000000002px;    background-size: 393.53000000000003px 517.5px;    background-position: -29.900000000000002px -29.900000000000002px;"></div>
+               <div class="banque ethno-narr AvocateBlandineL-stage AvocateBlandineL AvocateBlandineL-parole AvocateBlandineL AvocateBlandineL-parole AvocateBlandineL " style="    background-image: url('../Images/091.jpg');    width: 154.1px;    height: 151.8px;    background-size: 393.53000000000003px 517.5px;    background-position: -29.900000000000002px -179.4px;"></div>
+               <div class="banque ethno-narr BlandineL-stage BlandineL AvocateBlandineL-stage AvocateBlandineL AvocateBlandineL-parole AvocateBlandineL " style="    background-image: url('../Images/091.jpg');    width: 172.5px;    height: 158.70000000000002px;    background-size: 393.53000000000003px 517.5px;    background-position: -193.20000000000002px -172.5px;"></div>
+               <div class="banque ethno-narr BlandineL-stage BlandineL AvocateBlandineL-stage AvocateBlandineL AvocatJacquesL-stage AvocatJacquesL JacquesL-stage JacquesL ConseillereCA-stage ConseillereCA CelineB-stage CelineB AbigailB-stage AbigailB RomainP-stage RomainP AvocateBlandineL-parole AvocateBlandineL AvocateBlandineL-parole AvocateBlandineL " style="    background-image: url('../Images/091.jpg');    width: 193.20000000000002px;    height: 164.45000000000002px;    background-size: 393.53000000000003px 517.5px;    background-position: -29.900000000000002px -313.95px;"></div>
+               <div class="banque ethno-narr AvocatJacquesL-stage AvocatJacquesL AvocateBlandineL-parole AvocateBlandineL " style="    background-image: url('../Images/091.jpg');    width: 139.15px;    height: 164.45000000000002px;    background-size: 393.53000000000003px 517.5px;    background-position: -223.10000000000002px -313.95px;"></div>
+               <div class="banque ethno-narr AvocatJacquesL-stage AvocatJacquesL AvocatJacquesL-parole AvocatJacquesL " style="    background-image: url('../Images/092.jpg');    width: 98.9px;    height: 200.10000000000002px;    background-size: 393.53000000000003px 517.5px;    background-position: -29.900000000000002px -29.900000000000002px;"></div>
+               <div class="banque ethno-narr AvocatJacquesL-stage AvocatJacquesL AvocatJacquesL-parole AvocatJacquesL " style="    background-image: url('../Images/092.jpg');    width: 110.4px;    height: 200.10000000000002px;    background-size: 393.53000000000003px 517.5px;    background-position: -138px -29.900000000000002px;"></div>
+               <div class="banque ethno-narr AvocatJacquesL-stage AvocatJacquesL JacquesL-stage JacquesL ConseillereCA-stage ConseillereCA AvocatJacquesL-parole AvocatJacquesL " style="    background-image: url('../Images/092.jpg');    width: 113.85000000000001px;    height: 200.10000000000002px;    background-size: 393.53000000000003px 517.5px;    background-position: -248.4px -29.900000000000002px;"></div>
+               <div class="banque ethno-narr AvocatJacquesL-stage AvocatJacquesL JacquesL-stage JacquesL AvocateBlandineL-stage AvocateBlandineL BlandineL-stage BlandineL CelineB-stage CelineB AbigailB-stage AbigailB RomainP-stage RomainP AvocatJacquesL-parole AvocatJacquesL AvocatJacquesL-parole AvocatJacquesL " style="    background-image: url('../Images/092.jpg');    width: 163.3px;    height: 142.6px;    background-size: 393.53000000000003px 517.5px;    background-position: -29.900000000000002px -225.4px;"></div>
+               <div class="banque ethno-narr AvocatJacquesL-stage AvocatJacquesL JacquesL-stage JacquesL CelineB-stage CelineB AbigailB-stage AbigailB RomainP-stage RomainP AvocatJacquesL-parole AvocatJacquesL AvocatJacquesL-parole AvocatJacquesL " style="    background-image: url('../Images/092.jpg');    width: 159.85px;    height: 154.1px;    background-size: 393.53000000000003px 517.5px;    background-position: -202.4px -213.9px;"></div>
+               <div class="banque ethno-narr ConseillereCA-stage ConseillereCA AvocatJacquesL-parole AvocatJacquesL " style="    background-image: url('../Images/092.jpg');    width: 332.35px;    height: 110.4px;    background-size: 393.53000000000003px 517.5px;    background-position: -29.900000000000002px -368px;"></div>
+               <div class="banque ethno-narr ConseillereCA-stage ConseillereCA CelineB-stage CelineB AbigailB-stage AbigailB RomainP-stage RomainP chat-tigre-parole chat-tigre ConseillereCA-parole ConseillereCA ConseillereCA-parole ConseillereCA " style="    background-image: url('../Images/093.jpg');    width: 332.35px;    height: 163.3px;    background-size: 393.53000000000003px 517.5px;    background-position: -29.900000000000002px -29.900000000000002px;"></div>
+               <div class="banque ethno-narr ConseillereCA-stage ConseillereCA ConseillereCA-parole ConseillereCA ConseillereCA-parole ConseillereCA ConseillereCA-parole ConseillereCA " style="    background-image: url('../Images/093.jpg');    width: 200.10000000000002px;    height: 184px;    background-size: 393.53000000000003px 517.5px;    background-position: -29.900000000000002px -181.70000000000002px;"></div>
+               <div class="banque ethno-narr ConseillereCA-stage ConseillereCA CelineB-stage CelineB AbigailB-stage AbigailB RomainP-stage RomainP ConseillereCA-parole ConseillereCA " style="    background-image: url('../Images/093.jpg');    width: 132.25px;    height: 177.1px;    background-size: 393.53000000000003px 517.5px;    background-position: -230px -188.6px;"></div>
+               <div class="banque ethno-narr ConseillereCA-stage ConseillereCA CelineB-stage CelineB AbigailB-stage AbigailB RomainP-stage RomainP ConseillereCA-parole ConseillereCA " style="    background-image: url('../Images/093.jpg');    width: 332.35px;    height: 110.4px;    background-size: 393.53000000000003px 517.5px;    background-position: -29.900000000000002px -368px;"></div>
+               <div class="banque ethno-narr ConseillereCA-stage ConseillereCA ConseillereCA-parole ConseillereCA " style="    background-image: url('../Images/094.jpg');    width: 170.20000000000002px;    height: 149.5px;    background-size: 393.53000000000003px 517.5px;    background-position: -29.900000000000002px -29.900000000000002px;"></div>
+               <div class="banque ethno-narr ConseillereCA-stage ConseillereCA ConseillereCA-parole ConseillereCA ConseillereCA-parole ConseillereCA " style="    background-image: url('../Images/094.jpg');    width: 164.45000000000002px;    height: 151.8px;    background-size: 393.53000000000003px 517.5px;    background-position: -197.8px -29.900000000000002px;"></div>
+               <div class="banque ethno-narr CelineB-stage CelineB AbigailB-stage AbigailB RomainP-stage RomainP vide-parole vide " style="    background-image: url('../Images/094.jpg');    width: 332.35px;    height: 114.54px;    background-size: 393.53000000000003px 517.5px;    background-position: -29.900000000000002px -179.4px;"></div>
+               <div class="banque ethno-narr ConseillereCA-stage ConseillereCA ConseillereCA-parole ConseillereCA ConseillereCA-parole ConseillereCA " style="    background-image: url('../Images/094.jpg');    width: 118.45px;    height: 186.3px;    background-size: 393.53000000000003px 517.5px;    background-position: -29.900000000000002px -292.1px;"></div>
+               <div class="banque ethno-narr ConseillereCA-stage ConseillereCA ConseillereCA-parole ConseillereCA " style="    background-image: url('../Images/094.jpg');    width: 95.45px;    height: 186.3px;    background-size: 393.53000000000003px 517.5px;    background-position: -148.35px -292.1px;"></div>
+               <div class="banque ethno-narr ConseillereCA-stage ConseillereCA CelineB-stage CelineB RomainP-stage RomainP AbigailB-stage AbigailB AbigailB-parole AbigailB " style="    background-image: url('../Images/094.jpg');    width: 118.45px;    height: 186.3px;    background-size: 393.53000000000003px 517.5px;    background-position: -243.8px -292.1px;"></div>
+               <div class="banque ethno-narr ConseillereCA-stage ConseillereCA ConseillereCA-parole ConseillereCA ConseillereCA-parole ConseillereCA " style="    background-image: url('../Images/095.jpg');    width: 230px;    height: 118.45px;    background-size: 393.53000000000003px 517.5px;    background-position: -29.900000000000002px -29.900000000000002px;"></div>
+               <div class="banque felin-narr chat-tigre-stage chat-tigre chat-tigre-parole chat-tigre " style="    background-image: url('../Images/095.jpg');    width: 169.05px;    height: 129.49px;    background-size: 393.53000000000003px 517.5px;    background-position: -193.20000000000002px -29.900000000000002px;"></div>
+               <div class="banque ethno-narr RomainP-stage RomainP CelineB-stage CelineB AbigailB-stage AbigailB ConseillereCA-stage ConseillereCA ConseillereCA-parole ConseillereCA AbigailB-parole AbigailB " style="    background-image: url('../Images/095.jpg');    width: 332.35px;    height: 84.41px;    background-size: 393.53000000000003px 517.5px;    background-position: -29.900000000000002px -152.49px;"></div>
+               <div class="banque ethno-narr ConseillereCA-stage ConseillereCA ConseillereCA-parole ConseillereCA ConseillereCA-parole ConseillereCA ConseillereCA-parole ConseillereCA " style="    background-image: url('../Images/095.jpg');    width: 332.35px;    height: 115px;    background-size: 393.53000000000003px 517.5px;    background-position: -29.900000000000002px -230px;"></div>
+               <div class="banque felin-narr chat-tigre-stage chat-tigre chat-tigre-parole chat-tigre " style="    background-image: url('../Images/095.jpg');    width: 179.86px;    height: 138px;    background-size: 393.53000000000003px 517.5px;    background-position: -29.900000000000002px -340.40000000000003px;"></div>
+               <div class="banque ethno-narr ConseillereCA-stage ConseillereCA ConseillereCA-parole ConseillereCA " style="    background-image: url('../Images/095.jpg');    width: 210.45000000000002px;    height: 138px;    background-size: 393.53000000000003px 517.5px;    background-position: -151.8px -340.40000000000003px;"></div>
+               <div class="banque felin-narr chat-tigre-stage chat-tigre chat-tigre-parole chat-tigre " style="    background-image: url('../Images/096.jpg');    width: 190.9px;    height: 92px;    background-size: 393.53000000000003px 517.5px;    background-position: -34.5px -34.5px;"></div>
+               <div class="banque felin-narr chat-tigre-stage chat-tigre chat-tigre-parole chat-tigre chat-tigre-parole chat-tigre " style="    background-image: url('../Images/096.jpg');    width: 208.15px;    height: 133.4px;    background-size: 393.53000000000003px 517.5px;    background-position: -154.1px -87.4px;"></div>
+               <div class="banque felin-narr chat-tigre-stage chat-tigre chat-tigre-parole chat-tigre chat-tigre-parole chat-tigre chat-tigre-parole chat-tigre " style="    background-image: url('../Images/096.jpg');    width: 332.35px;    height: 215.05px;    background-size: 393.53000000000003px 517.5px;    background-position: -29.900000000000002px -263.35px;"></div>
+               <div class="banque ethno-narr CelineB-stage CelineB AbigailB-stage AbigailB RomainP-stage RomainP ConseillereCA-stage ConseillereCA vide-parole vide " style="    background-image: url('../Images/096.jpg');    width: 332.35px;    height: 448.5px;    background-size: 393.53000000000003px 517.5px;    background-position: -29.900000000000002px -29.900000000000002px;"></div>
+               <div class="banque ethno-narr AnnaDM-stage AnnaDM NadiaA-stage NadiaA CelineB-parole CelineB CelineB-parole CelineB AnnaDM-parole AnnaDM " style="    background-image: url('../Images/101.jpg');    width: 332.35px;    height: 135.70000000000002px;    background-size: 393.53000000000003px 517.5px;    background-position: -29.900000000000002px -29.900000000000002px;"></div>
+               <div class="banque ethno-narr NadiaA-stage NadiaA NadiaA-parole NadiaA " style="    background-image: url('../Images/101.jpg');    width: 127.65px;    height: 218.5px;    background-size: 393.53000000000003px 517.5px;    background-position: -29.900000000000002px -165.6px;"></div>
+               <div class="banque ethno-narr FatimataD-stage FatimataD MoussaD-stage MoussaD CelineB-parole CelineB " style="    background-image: url('../Images/101.jpg');    width: 204.70000000000002px;    height: 218.5px;    background-size: 393.53000000000003px 517.5px;    background-position: -157.55px -165.6px;"></div>
+               <div class="banque ethno-narr FatimataD-stage FatimataD MoussaD-stage MoussaD CelineB-parole CelineB " style="    background-image: url('../Images/101.jpg');    width: 134.55px;    height: 94.3px;    background-size: 393.53000000000003px 517.5px;    background-position: -29.900000000000002px -384.1px;"></div>
+               <div class="banque ethno-narr FatimataD-stage FatimataD CelineB-parole CelineB " style="    background-image: url('../Images/101.jpg');    width: 79.35000000000001px;    height: 94.3px;    background-size: 393.53000000000003px 517.5px;    background-position: -164.45000000000002px -384.1px;"></div>
+               <div class="banque felin-narr FatimataD-stage FatimataD CelineB-parole CelineB " style="    background-image: url('../Images/101.jpg');    width: 118.45px;    height: 94.3px;    background-size: 393.53000000000003px 517.5px;    background-position: -243.8px -384.1px;"></div>
+               <div class="banque ethno-narr FatimataD-stage FatimataD MadiabaD-stage MadiabaD CelineB-parole CelineB " style="    background-image: url('../Images/102.jpg');    width: 170.20000000000002px;    height: 151.8px;    background-size: 393.53000000000003px 517.5px;    background-position: -29.900000000000002px -29.900000000000002px;"></div>
+               <div class="banque ethno-narr FatimataD-stage FatimataD MadiabaD-stage MadiabaD CelineB-parole CelineB " style="    background-image: url('../Images/102.jpg');    width: 162.15px;    height: 151.8px;    background-size: 393.53000000000003px 517.5px;    background-position: -200.10000000000002px -29.900000000000002px;"></div>
+               <div class="banque ethno-narr MoussaD-stage MoussaD CelineB-parole CelineB " style="    background-image: url('../Images/102.jpg');    width: 167.9px;    height: 151.8px;    background-size: 393.53000000000003px 517.5px;    background-position: -29.900000000000002px -181.70000000000002px;"></div>
+               <div class="banque ethno-narr MoussaD-stage MoussaD FemmeMoussaD-stage FemmeMoussaD CelineB-parole CelineB " style="    background-image: url('../Images/102.jpg');    width: 164.45000000000002px;    height: 151.8px;    background-size: 393.53000000000003px 517.5px;    background-position: -197.8px -181.70000000000002px;"></div>
+               <div class="banque ethno-narr MoussaD-stage MoussaD FatimataD-stage FatimataD NadiaA-stage NadiaA AnnaDM-stage AnnaDM CelineB-parole CelineB MoussaD-parole MoussaD AnnaDM-parole AnnaDM " style="    background-image: url('../Images/102.jpg');    width: 332.35px;    height: 144.9px;    background-size: 393.53000000000003px 517.5px;    background-position: -29.900000000000002px -333.5px;"></div>
+               <div class="banque ethno-narr MoussaD-stage MoussaD FatimataD-stage FatimataD NadiaA-stage NadiaA AnnaDM-stage AnnaDM MoussaD-parole MoussaD AnnaDM-parole AnnaDM " style="    background-image: url('../Images/103.jpg');    width: 238.05px;    height: 154.1px;    background-size: 393.53000000000003px 517.5px;    background-position: -29.900000000000002px -29.900000000000002px;"></div>
+               <div class="banque ethno-narr FatimataD-stage FatimataD vide-parole vide " style="    background-image: url('../Images/103.jpg');    width: 94.3px;    height: 154.1px;    background-size: 393.53000000000003px 517.5px;    background-position: -267.95px -29.900000000000002px;"></div>
+               <div class="banque ethno-narr MoussaD-stage MoussaD FatimataD-stage FatimataD NadiaA-stage NadiaA AnnaDM-stage AnnaDM AnnaDM-parole AnnaDM NadiaA-parole NadiaA " style="    background-image: url('../Images/103.jpg');    width: 121.9px;    height: 172.5px;    background-size: 393.53000000000003px 517.5px;    background-position: -29.900000000000002px -186.3px;"></div>
+               <div class="banque ethno-narr FatimataD-stage FatimataD FatimataD-parole FatimataD FatimataD-parole FatimataD " style="    background-image: url('../Images/103.jpg');    width: 115px;    height: 169.74px;    background-size: 393.53000000000003px 517.5px;    background-position: -144.9px -189.06px;"></div>
+               <div class="banque ethno-narr AnnaDM-stage AnnaDM AnnaDM-parole AnnaDM AnnaDM-parole AnnaDM " style="    background-image: url('../Images/103.jpg');    width: 115.92px;    height: 184px;    background-size: 393.53000000000003px 517.5px;    background-position: -246.33px -174.8px;"></div>
+               <div class="banque ethno-narr MoussaD-stage MoussaD FatimataD-stage FatimataD NadiaA-stage NadiaA AnnaDM-stage AnnaDM HeleneS-stage HeleneS MarionA-stage MarionA AnnaDM-parole AnnaDM " style="    background-image: url('../Images/103.jpg');    width: 332.35px;    height: 125.35000000000001px;    background-size: 393.53000000000003px 517.5px;    background-position: -29.900000000000002px -353.05px;"></div>
+               <div class="banque ethno-narr AnnaDM-stage AnnaDM NadiaA-stage NadiaA ArianeB-stage ArianeB FernandoM-stage FernandoM HeleneS-stage HeleneS MarionA-stage MarionA chat-tigre-parole chat-tigre ArianeB-parole ArianeB FernandoM-parole FernandoM ArianeB-parole ArianeB " style="    background-image: url('../Images/109.jpg');    width: 333.5px;    height: 108.10000000000001px;    background-size: 393.53000000000003px 517.5px;    background-position: -29.900000000000002px -29.900000000000002px;"></div>
+               <div class="banque ethno-narr AnnaDM-stage AnnaDM ArianeB-stage ArianeB AnnaDM-parole AnnaDM ArianeB-parole ArianeB " style="    background-image: url('../Images/109.jpg');    width: 163.3px;    height: 148.35px;    background-size: 393.53000000000003px 517.5px;    background-position: -29.900000000000002px -138px;"></div>
+               <div class="banque ethno-narr ArianeB-stage ArianeB FernandoM-stage FernandoM chat-tigre-parole chat-tigre ArianeB-parole ArianeB " style="    background-image: url('../Images/109.jpg');    width: 169.05px;    height: 148.35px;    background-size: 393.53000000000003px 517.5px;    background-position: -193.20000000000002px -138px;"></div>
+               <div class="banque ethno-narr ArianeB-stage ArianeB ArianeB-parole ArianeB " style="    background-image: url('../Images/109.jpg');    width: 112.7px;    height: 192.05px;    background-size: 393.53000000000003px 517.5px;    background-position: -29.900000000000002px -286.35px;"></div>
+               <div class="banque ethno-narr ArianeB-stage ArianeB FernandoM-stage FernandoM ArianeB-parole ArianeB " style="    background-image: url('../Images/109.jpg');    width: 115px;    height: 192.05px;    background-size: 393.53000000000003px 517.5px;    background-position: -142.6px -286.35px;"></div>
+               <div class="banque ethno-narr AnnaDM-stage AnnaDM ArianeB-parole ArianeB " style="    background-image: url('../Images/109.jpg');    width: 104.65px;    height: 192.05px;    background-size: 393.53000000000003px 517.5px;    background-position: -257.6px -286.35px;"></div>
+               <div class="banque ethno-narr FernandoM-stage FernandoM chat-tigre-parole chat-tigre FernandoM-parole FernandoM " style="    background-image: url('../Images/110.jpg');    width: 166.75px;    height: 154.1px;    background-size: 393.53000000000003px 517.5px;    background-position: -29.900000000000002px -29.900000000000002px;"></div>
+               <div class="banque ethno-narr FernandoM-stage FernandoM AnnaDM-stage AnnaDM FernandoM-parole FernandoM " style="    background-image: url('../Images/110.jpg');    width: 165.6px;    height: 154.1px;    background-size: 393.53000000000003px 517.5px;    background-position: -196.65px -29.900000000000002px;"></div>
+               <div class="banque ethno-narr AnnaDM-stage AnnaDM NadiaA-stage NadiaA AnnaDM-parole AnnaDM AnnaDM-parole AnnaDM " style="    background-image: url('../Images/110.jpg');    width: 166.75px;    height: 150.65px;    background-size: 393.53000000000003px 517.5px;    background-position: -29.900000000000002px -184px;"></div>
+               <div class="banque ethno-narr AnnaDM-stage AnnaDM AnnaDM-parole AnnaDM ArianeB-parole ArianeB " style="    background-image: url('../Images/110.jpg');    width: 165.6px;    height: 150.65px;    background-size: 393.53000000000003px 517.5px;    background-position: -196.65px -184px;"></div>
+               <div class="banque ethno-narr ArianeB-stage ArianeB ArianeB-parole ArianeB " style="    background-image: url('../Images/110.jpg');    width: 166.75px;    height: 143.75px;    background-size: 393.53000000000003px 517.5px;    background-position: -29.900000000000002px -334.65000000000003px;"></div>
+               <div class="banque ethno-narr AnnaDM-stage AnnaDM ArianeB-stage ArianeB AnnaDM-parole AnnaDM AnnaDM-parole AnnaDM " style="    background-image: url('../Images/110.jpg');    width: 165.6px;    height: 143.75px;    background-size: 393.53000000000003px 517.5px;    background-position: -196.65px -334.65000000000003px;"></div>
+               <div class="banque ethno-narr ArianeB-stage ArianeB ArianeB-parole ArianeB ArianeB-parole ArianeB " style="    background-image: url('../Images/111.jpg');    width: 165.6px;    height: 159.85px;    background-size: 393.53000000000003px 517.5px;    background-position: -29.900000000000002px -29.900000000000002px;"></div>
+               <div class="banque ethno-narr FernandoM-stage FernandoM AnnaDM-stage AnnaDM ArianeB-stage ArianeB NadiaA-stage NadiaA ArianeB-parole ArianeB AnnaDM-parole AnnaDM " style="    background-image: url('../Images/111.jpg');    width: 166.75px;    height: 159.85px;    background-size: 393.53000000000003px 517.5px;    background-position: -195.5px -29.900000000000002px;"></div>
+               <div class="banque ethno-narr AnnaDM-stage AnnaDM ArianeB-stage ArianeB NadiaA-stage NadiaA ArianeB-parole ArianeB " style="    background-image: url('../Images/111.jpg');    width: 165.6px;    height: 163.3px;    background-size: 393.53000000000003px 517.5px;    background-position: -29.900000000000002px -189.75px;"></div>
+               <div class="banque ethno-narr FernandoM-stage FernandoM AnnaDM-stage AnnaDM ArianeB-stage ArianeB NadiaA-stage NadiaA HeleneS-stage HeleneS MarionA-stage MarionA AnnaDM-parole AnnaDM " style="    background-image: url('../Images/111.jpg');    width: 166.75px;    height: 163.3px;    background-size: 393.53000000000003px 517.5px;    background-position: -195.5px -189.75px;"></div>
+               <div class="banque ethno-narr FernandoM-stage FernandoM AnnaDM-stage AnnaDM ArianeB-stage ArianeB NadiaA-stage NadiaA AnnaDM-parole AnnaDM " style="    background-image: url('../Images/111.jpg');    width: 332.35px;    height: 125.35000000000001px;    background-size: 393.53000000000003px 517.5px;    background-position: -29.900000000000002px -353.05px;"></div>
+               <div class="banque ethno-narr AhmedB-stage AhmedB KhadidjaH-stage KhadidjaH chat-tigre-parole chat-tigre " style="    background-image: url('../Images/113.jpg');    width: 172.5px;    height: 149.5px;    background-size: 393.53000000000003px 517.5px;    background-position: -29.900000000000002px -29.900000000000002px;"></div>
+               <div class="banque ethno-narr AhmedB-stage AhmedB KhadidjaH-stage KhadidjaH chat-tigre-parole chat-tigre " style="    background-image: url('../Images/113.jpg');    width: 159.85px;    height: 149.5px;    background-size: 393.53000000000003px 517.5px;    background-position: -202.4px -29.900000000000002px;"></div>
+               <div class="banque ethno-narr AhmedB-stage AhmedB KhadidjaH-stage KhadidjaH AvocateAhmedB-stage AvocateAhmedB AvocateKhadidjaH-stage AvocateKhadidjaH EtienneP-stage EtienneP Greffiere-stage Greffiere CelineB-stage CelineB AurelieFC-stage AurelieFC chat-tigre-parole chat-tigre EtienneP-parole EtienneP AhmedB-parole AhmedB " style="    background-image: url('../Images/113.jpg');    width: 332.35px;    height: 149.5px;    background-size: 393.53000000000003px 517.5px;    background-position: -29.900000000000002px -179.4px;"></div>
+               <div class="banque ethno-narr EtienneP-stage EtienneP EtienneP-parole EtienneP " style="    background-image: url('../Images/113.jpg');    width: 157.55px;    height: 149.5px;    background-size: 393.53000000000003px 517.5px;    background-position: -29.900000000000002px -328.90000000000003px;"></div>
+               <div class="banque ethno-narr KhadidjaH-stage KhadidjaH AvocateKhadidjaH-stage AvocateKhadidjaH KhadidjaH-parole KhadidjaH KhadidjaH-parole KhadidjaH " style="    background-image: url('../Images/113.jpg');    width: 174.8px;    height: 149.5px;    background-size: 393.53000000000003px 517.5px;    background-position: -187.45000000000002px -328.90000000000003px;"></div>
+               <div class="banque ethno-narr AhmedB-stage AhmedB AvocateAhmedB-stage AvocateAhmedB AvocateAhmedB-parole AvocateAhmedB AvocateAhmedB-parole AvocateAhmedB " style="    background-image: url('../Images/114.jpg');    width: 167.9px;    height: 158.70000000000002px;    background-size: 393.53000000000003px 517.5px;    background-position: -29.900000000000002px -29.900000000000002px;"></div>
+               <div class="banque ethno-narr AhmedB-stage AhmedB AvocateAhmedB-stage AvocateAhmedB AvocateAhmedB-parole AvocateAhmedB AhmedB-parole AhmedB " style="    background-image: url('../Images/114.jpg');    width: 164.45000000000002px;    height: 158.70000000000002px;    background-size: 393.53000000000003px 517.5px;    background-position: -197.8px -29.900000000000002px;"></div>
+               <div class="banque ethno-narr KhadidjaH-stage KhadidjaH AvocateKhadidjaH-stage AvocateKhadidjaH KhadidjaH-parole KhadidjaH KhadidjaH-parole KhadidjaH " style="    background-image: url('../Images/114.jpg');    width: 167.9px;    height: 165.6px;    background-size: 393.53000000000003px 517.5px;    background-position: -29.900000000000002px -188.6px;"></div>
+               <div class="banque ethno-narr KhadidjaH-stage KhadidjaH AvocateKhadidjaH-stage AvocateKhadidjaH AvocateKhadidjaH-parole AvocateKhadidjaH AvocateKhadidjaH-parole AvocateKhadidjaH " style="    background-image: url('../Images/114.jpg');    width: 164.45000000000002px;    height: 165.6px;    background-size: 393.53000000000003px 517.5px;    background-position: -197.8px -188.6px;"></div>
+               <div class="banque ethno-narr AhmedB-stage AhmedB AvocateAhmedB-stage AvocateAhmedB KhadidjaH-stage KhadidjaH AvocateKhadidjaH-stage AvocateKhadidjaH EtienneP-stage EtienneP EtienneP-parole EtienneP " style="    background-image: url('../Images/114.jpg');    width: 332.35px;    height: 124.2px;    background-size: 393.53000000000003px 517.5px;    background-position: -29.900000000000002px -354.2px;"></div>
+               <div class="banque ethno-narr EtienneP-stage EtienneP EtienneP-parole EtienneP " style="    background-image: url('../Images/115.jpg');    width: 158.70000000000002px;    height: 163.99px;    background-size: 393.53000000000003px 517.5px;    background-position: -29.900000000000002px -29.900000000000002px;"></div>
+               <div class="banque ethno-narr AhmedB-stage AhmedB AvocateAhmedB-stage AvocateAhmedB KhadidjaH-stage KhadidjaH AvocateKhadidjaH-stage AvocateKhadidjaH AvocateKhadidjaH-parole AvocateKhadidjaH AvocateKhadidjaH-parole AvocateKhadidjaH " style="    background-image: url('../Images/115.jpg');    width: 189.75px;    height: 171.35px;    background-size: 393.53000000000003px 517.5px;    background-position: -172.5px -29.900000000000002px;"></div>
+               <div class="banque ethno-narr AhmedB-stage AhmedB AvocateAhmedB-stage AvocateAhmedB KhadidjaH-stage KhadidjaH AvocateKhadidjaH-stage AvocateKhadidjaH EtienneP-stage EtienneP CelineB-stage CelineB AurelieFC-stage AurelieFC AvocateKhadidjaH-parole AvocateKhadidjaH AhmedB-parole AhmedB " style="    background-image: url('../Images/115.jpg');    width: 167.9px;    height: 164.91px;    background-size: 393.53000000000003px 517.5px;    background-position: -29.900000000000002px -193.89000000000001px;"></div>
+               <div class="banque ethno-narr AhmedB-stage AhmedB AhmedB-parole AhmedB AhmedB-parole AhmedB " style="    background-image: url('../Images/115.jpg');    width: 164.45000000000002px;    height: 164.91px;    background-size: 393.53000000000003px 517.5px;    background-position: -197.8px -193.89000000000001px;"></div>
+               <div class="banque ethno-narr KhadidjaH-stage KhadidjaH AvocateKhadidjaH-stage AvocateKhadidjaH AvocateKhadidjaH-parole AvocateKhadidjaH KhadidjaH-parole KhadidjaH " style="    background-image: url('../Images/115.jpg');    width: 165.6px;    height: 119.60000000000001px;    background-size: 393.53000000000003px 517.5px;    background-position: -29.900000000000002px -358.8px;"></div>
+               <div class="banque ethno-narr KhadidjaH-stage KhadidjaH KhadidjaH-parole KhadidjaH " style="    background-image: url('../Images/115.jpg');    width: 166.75px;    height: 119.60000000000001px;    background-size: 393.53000000000003px 517.5px;    background-position: -195.5px -358.8px;"></div>
+            </div>
+         </section>
+      </main>
+   </body>
+</html>

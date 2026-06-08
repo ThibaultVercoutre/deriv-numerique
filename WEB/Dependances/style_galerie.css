@@ -1,0 +1,62 @@
+/* Mise en page */
+
+/* STRUCTURE PAGE */
+
+main {
+	border: 2px solid var(--couverture);
+	margin : 0 5% ;
+	padding: 1em;
+	border-radius: 20px;
+	background-color: var(--ardoise_transparent);
+}
+
+div.filtres {
+    position: sticky;
+    top: 0;
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+}
+
+main.double {
+	display: grid;
+    grid-template-columns: 1fr 1fr;
+	align-items: start;
+}
+
+.galerie_div {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 5px;
+	overflow: auto;
+	max-height: 100%;
+}
+
+
+section.planches {
+	width:100%;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 5px;
+	position:relative;
+	overflow-y: auto;
+	max-height: 75vh;
+}
+
+img.galerie {
+	max-height:60vh;
+	max-width: 100%;
+}
+
+section.unit-planches table {
+    width: 100%;
+}
+
+section.planches td {
+    width: 50%;
+	vertical-align: top ;
+}
+
+section.unit-comp {
+	max-height: 100%;
+}

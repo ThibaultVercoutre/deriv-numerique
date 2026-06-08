@@ -1,0 +1,144 @@
+/* Mise en page */
+
+/* STRUCTURE PAGE */
+
+section.section_texte {
+	line-height:150%;
+	font-size: 12pt;
+	text-align: justify;
+	text-indent: 12pt;
+}
+
+p.titre_textuel {
+	text-indent: 0pt;
+	font-weight: bold;
+}
+
+/* Labels de section (pas des liens) */
+.popup ul li:not(:has(a)) {
+    font-weight: bold;
+    font-variant: small-caps;
+	margin-left: -2.5em;
+    margin-top: 0.6em;
+    color: var(--couverture);
+	list-style: none
+}
+
+/* Liens personnages/notions */
+.popup ul li a {
+    background: none;
+    border: none;
+    color: var(--titre);
+    font-size: 1em;
+    display: inline;
+}
+
+@media screen and (min-width: 768px) {
+	
+	main {
+		display: grid;
+   		grid-template-columns: 1fr 1fr;
+		grid-template-areas: "planches texte";
+	}
+
+	section.section_texte {
+		grid-area: texte;
+		overflow-y: auto;
+		max-height:74vh;
+	}
+	section.section_planches {
+		grid-area: planches;
+		overflow-y: auto;
+		max-height:74vh;
+	}
+
+}
+
+p {
+	margin: 2em
+}
+
+/* AFFICHAGE DES IMAGES */
+
+img.planche {
+	transform-origin: top left;
+    transform: scale(0.23);
+    margin-bottom: calc((0.23 - 1) * 2200px);
+    display: block;
+}
+
+img.recit_textuel {
+	height:auto;
+	display: block;
+    margin: auto;
+	mix-blend-mode: multiply;
+	}
+
+	
+@media screen and (min-width: 768px) {
+	img.recit_textuel {
+	max-width: 50%;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	img.recit_textuel {
+	height: 33vh;
+	}
+}
+
+.popup {
+    display: none;
+}
+
+.popup.visible {
+    display: block;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--papier);
+    border: 2px solid var(--couverture);
+    border-radius: 10px;
+    padding: 1em;
+    z-index: 100;
+}
+
+.popup td a {
+    background: none;
+    color: var(--couverture);
+}
+
+.popup td a:hover {
+    color: var(--titre);
+}
+
+.popup table {
+	margin-top: 12pt;
+}
+
+.popup tbody td {
+    padding-left: 12pt;
+}
+
+.popup thead th {
+	font-style: italic;
+	text-align: left;
+	font-weight: normal;
+}
+
+.popup p {
+	margin: 0;
+	text-indent: 12pt;
+}
+
+.speaker {
+	font-family:'EBGaramondSC';
+	font-weight: bold;
+	color: var(--couverture);
+}
+
+.forme-bulle {
+	font-style: italic;
+	color: var(--couverture);
+}
