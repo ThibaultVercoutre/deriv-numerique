@@ -32,6 +32,8 @@ function EmphaseAdaptation() {
 	boutton.setAttribute('onclick', 'DesEmphaseAdaptation()');
 }
 
+// Mise en valeur des adaptations dans le texte d'origine
+
 function DesEmphaseAdaptation() {
 	
 	let conservation = document.getElementsByClassName("adaptation")
@@ -48,26 +50,27 @@ function DesEmphaseAdaptation() {
 	boutton.setAttribute('onclick', 'EmphaseAdaptation()');
 }
 
+// Activer un filtre dans la galerie
+
 function filter(event, classe_conteneur) {
-    let section = event.target.parentNode.parentNode;
-    let elements = section.getElementsByClassName(classe_conteneur);
-    
-    // Récupérer toutes les valeurs de filtres actifs dans cette section
-    let selects = event.target.parentNode.getElementsByTagName('select');
-    let filtres = [];
-    for (let select of selects) {
-        if (select.value !== "tous") {
-            filtres.push(select.value);
-        }
-    }
-    
-    for (let element of elements) {
-        if (filtres.every(f => element.classList.contains(f) || element.id === f)) {
-            element.style.display = "block";
-        } else {
-            element.style.display = "none";
-        }
-    }
+	let section = event.target.parentNode.parentNode;
+	let elements = section.getElementsByClassName(classe_conteneur);
+	
+	let selects = event.target.parentNode.getElementsByTagName('select');
+	let filtres = [];
+	for (let select of selects) {
+		if (select.value !== "tous") {
+			filtres.push(select.value);
+		}
+	}
+	
+	for (let element of elements) {
+		if (filtres.every(f => element.classList.contains(f) || element.id === f)) {
+			element.style.display = "block";
+		} else {
+			element.style.display = "none";
+		}
+	}
 }
 
 // Mise en page comparative de la galerie
@@ -129,44 +132,42 @@ function switchpv() {
 // Corriger les area des maps des récits ethnographiques
 
 function corrigerMaps() {
-    let images = document.getElementsByClassName('planche');
-    for (let img of images) {
-        if (!img.getAttribute('usemap')) continue;
-        let mapName = img.getAttribute('usemap').replace('#', '');
-        let map = document.getElementsByName(mapName)[0];
-        if (!map) continue;
-        let areas = map.getElementsByTagName('area');
-        for (let area of areas) {
-            let coords = area.getAttribute('coords').split(',').map(Number);
-            let corriges = [
-                Math.round(coords[0] * 0.23),
-                Math.round(coords[1] * 0.23),
-                Math.round(coords[2] * 0.23),
-                Math.round(coords[3] * 0.23)
-            ];
-            area.setAttribute('coords', corriges.join(','));
-        }
-    }
+	let images = document.getElementsByClassName('planche');
+	for (let img of images) {
+		let mapName = img.getAttribute('usemap').replace('#', '');
+		let map = document.getElementsByName(mapName)[0];
+		let areas = map.getElementsByTagName('area');
+		for (let area of areas) {
+			let coords = area.getAttribute('coords').split(',').map(Number);
+			let corriges = [
+				Math.round(coords[0] * 0.23),
+				Math.round(coords[1] * 0.23),
+				Math.round(coords[2] * 0.23),
+				Math.round(coords[3] * 0.23)
+			];
+			area.setAttribute('coords', corriges.join(','));
+		}
+	}
 }
 
 window.addEventListener('load', corrigerMaps);
 
-// Popup pour lier aux index
+// Popup pour lier les récits aux index / montrer la retranscription
 
 function ouvrirPopup(event, id) {
-    // Fermer tout popup déjà ouvert
-    let ouverts = document.querySelectorAll('.popup.visible');
-    ouverts.forEach(p => p.classList.remove('visible'));
-    let popup;
+	// Fermer tout popup déjà ouvert
+	let ouverts = document.querySelectorAll('.popup.visible');
+	ouverts.forEach(p => p.classList.remove('visible'));
+	let popup;
 	if (event.altKey) {
-        popup = document.getElementById('acc_' + id);
-    } else {
-        popup = document.getElementById('info_' + id);
-    }
-    if (popup) popup.classList.add('visible');
+		popup = document.getElementById('acc_' + id);
+	} else {
+		popup = document.getElementById('info_' + id);
+	}
+	if (popup) popup.classList.add('visible');
 }
 
 function fermerPopup(event) {
-    event.target.parentNode.classList.remove('visible');
+	event.target.parentNode.classList.remove('visible');
 }
 
